@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beam Lab — Interactive Shear &amp; Moment Diagrams | M.I. Al-Khiami</title>
+  <meta name="description" content="Free interactive beam analysis tool for engineering students: build a beam with pins, rollers, fixed supports and hinges, apply point, moment and distributed loads, and watch reactions, shear and bending moment diagrams update live. Includes a practice-problem generator." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%230d1830%22/><text x=%2250%22 y=%2266%22 font-family=%22Georgia,serif%22 font-size=%2242%22 font-weight=%22700%22 text-anchor=%22middle%22 fill=%22%23f2b04e%22>MA</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Kalam:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css?v=7" />
+  <link rel="stylesheet" href="../css/beam-lab.css?v=4" />
+</head>
+<body class="beamlab">
+
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="nav-logo" href="../index.html" style="text-decoration:none;">← M<span>.</span>I<span>.</span> Al-Khiami</a>
+      <div class="bl-title">BEAM LAB <span class="bl-beta">v1</span></div>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme"></button>
+    </div>
+  </nav>
+
+  <main class="bl-layout container">
+    <aside class="bl-panel">
+      <div class="bl-section">
+        <div class="bl-head">Beam</div>
+        <div class="bl-row">
+          <span class="bl-lbl">Length</span>
+          <input type="number" id="beam-length" value="10" min="1" step="1" />
+          <span class="bl-lbl">m</span>
+        </div>
+        <div class="bl-row">
+          <span class="bl-lbl">Preset:</span>
+          <select id="preset-select">
+            <option value="">Choose…</option>
+            <option value="ss-point">Simply supported + point load</option>
+            <option value="ss-udl">Simply supported + UDL</option>
+            <option value="triangular">Triangular load</option>
+            <option value="cantilever">Cantilever</option>
+            <option value="overhang">Overhanging beam</option>
+            <option value="compound">Compound beam (hinge)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="bl-section">
+        <div class="bl-head">Supports</div>
+        <div id="sup-list"></div>
+        <div class="bl-add-row">
+          <button class="bl-add" id="add-pin">+ Pin</button>
+          <button class="bl-add" id="add-roller">+ Roller</button>
+          <button class="bl-add" id="add-fixed">+ Fixed</button>
+        </div>
+      </div>
+
+      <div class="bl-section">
+        <div class="bl-head">Internal hinges</div>
+        <div id="hinge-list"></div>
+        <div class="bl-add-row">
+          <button class="bl-add" id="add-hinge">+ Hinge</button>
+        </div>
+      </div>
+
+      <div class="bl-section">
+        <div class="bl-head">Loads</div>
+        <div id="load-list"></div>
+        <div class="bl-add-row">
+          <button class="bl-add" id="add-point">+ Point</button>
+          <button class="bl-add" id="add-moment">+ Moment</button>
+          <button class="bl-add" id="add-dist">+ Distributed</button>
+        </div>
+      </div>
+
+      <div class="bl-section">
+        <div class="bl-head">Practice</div>
+        <button class="btn btn-primary bl-generate" id="gen-practice">Start practice</button>
+        <div class="bl-row" style="margin-top:0.6rem">
+          <span class="bl-lbl">Name</span>
+          <input type="text" id="player-name" placeholder="for your score card" style="width:140px;font-family:var(--font-body)" />
+        </div>
+        <button class="bl-add" id="copy-scorecard">Copy score card</button>
+        <div class="bl-score" id="bl-score"></div>
+      </div>
+
+      <div class="bl-section">
+        <div class="bl-head">Share</div>
+        <button class="bl-add" id="share-btn">Copy link to this beam</button>
+        <div class="bl-note" style="margin-top:0.6rem">Anyone who opens the link sees exactly this beam — perfect for homework and study groups.</div>
+      </div>
+
+      <div class="bl-note">
+        Sign conventions: loads positive downward · applied moments positive counter-clockwise ·
+        upward reactions positive · sagging bending moment positive. Statically determinate beams only —
+        the tool tells you when a configuration isn't. Axial effects ignored.
+      </div>
+    </aside>
+
+    <section class="bl-canvas">
+      <div class="bl-msg" id="bl-msg"></div>
+
+      <div class="bl-card bl-practice-bar" id="practice-bar" style="display:none">
+        <span class="bl-streak" id="bl-streak"></span>
+        <span class="bl-forfeit" id="forfeit-note" style="display:none">answers revealed — this one doesn't count</span>
+        <div class="bl-add-row">
+          <button class="bl-add" id="reveal-r">Reveal reactions</button>
+          <button class="bl-add" id="reveal-d">Reveal diagrams</button>
+          <button class="bl-add bl-next" id="next-problem">Next problem →</button>
+          <button class="bl-add" id="exit-practice">Exit practice</button>
+        </div>
+      </div>
+
+      <div class="bl-card">
+        <div class="bl-card-title">Beam &amp; reactions</div>
+        <svg id="beam-svg" role="img" aria-label="Beam diagram"></svg>
+      </div>
+
+      <div class="bl-card" id="answer-card" style="display:none">
+        <div class="bl-card-title">Your answers — compute the reactions, then check</div>
+        <div id="answer-list"></div>
+        <div class="bl-add-row" style="align-items:center">
+          <button class="bl-add" id="check-answers">Check answers</button>
+          <span class="bl-answer-result" id="answer-result"></span>
+        </div>
+      </div>
+
+      <div class="bl-card bl-diagrams-wrap">
+        <div id="bl-diagrams">
+          <div class="bl-card-title">Shear force <span class="bl-unit">V (kN)</span></div>
+          <svg id="shear-svg" role="img" aria-label="Shear force diagram"></svg>
+          <div class="bl-card-title">Bending moment <span class="bl-unit">M (kN·m)</span></div>
+          <svg id="moment-svg" role="img" aria-label="Bending moment diagram"></svg>
+          <div class="bl-tip" id="bl-tip"></div>
+        </div>
+        <div class="bl-cover" id="practice-cover">
+          <div>
+            <strong>Solve it on paper first.</strong><br />
+            Find the reactions, then sketch V &amp; M.<br />
+            Reveal when you're ready — no peeking.
+          </div>
+        </div>
+      </div>
+
+      <div class="bl-card" id="solution-card">
+        <details id="solution-details">
+          <summary class="bl-sol-summary">Worked solution — equilibrium step by step</summary>
+          <div id="solution-body"></div>
+        </details>
+      </div>
+
+      <div class="bl-toast" id="bl-toast">Link copied to clipboard</div>
+    </section>
+  </main>
+
+  <footer class="bl-footer">
+    <div class="container">
+      <p>Beam Lab — a free teaching tool by
+        <a href="../index.html">Mohamad Iyad Al-Khiami</a>, Assistant Professor of Civil Engineering.
+        Built for students learning statics &amp; structural analysis.</p>
+    </div>
+  </footer>
+
+  <script src="../js/beam-lab.js?v=4"></script>
+  <script data-goatcounter="https://miyadalkh.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

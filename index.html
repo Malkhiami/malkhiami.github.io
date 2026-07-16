@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohamad Iyad Al-Khiami — Construction Management &amp; Building Informatics</title>
+  <meta name="description" content="Mohamad Iyad Al-Khiami — Assistant Professor in Civil Engineering specializing in construction management, building informatics, exoskeletons, robotics, VR, and applied AI." />
+  <meta name="author" content="Mohamad Iyad Al-Khiami" />
+  <!-- Social sharing preview -->
+  <meta property="og:title" content="Mohamad Iyad Al-Khiami" />
+  <meta property="og:description" content="Assistant Professor in Civil Engineering — Construction Management &amp; Building Informatics. Exoskeletons · Robotics · VR · Applied AI · Safety." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/images/og-card.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="assets/images/og-card.jpg" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%230d1830%22/><text x=%2250%22 y=%2266%22 font-family=%22Georgia,serif%22 font-size=%2242%22 font-weight=%22700%22 text-anchor=%22middle%22 fill=%22%23f2b04e%22>MA</text></svg>" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mohamad Iyad Al-Khiami",
+    "jobTitle": "Assistant Professor of Civil Engineering",
+    "description": "Assistant Professor specializing in construction management and building informatics: exoskeletons, robotics, virtual reality, applied AI, and occupational health & safety.",
+    "email": "mailto:m.iyadalkh@gmail.com",
+    "worksFor": {
+      "@type": "CollegeOrUniversity",
+      "name": "Australian University, Kuwait"
+    },
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "Aalborg University"
+    },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "Aalborg University" },
+      { "@type": "CollegeOrUniversity", "name": "Chalmers University of Technology" },
+      { "@type": "CollegeOrUniversity", "name": "Kuwait University" }
+    ],
+    "knowsAbout": ["Construction Management", "Building Informatics", "Industrial Exoskeletons", "Construction Robotics", "Virtual Reality", "Applied Artificial Intelligence", "Occupational Health and Safety", "Ergonomics", "Engineering Education", "Building Information Modeling"],
+    "sameAs": [
+      "https://scholar.google.com/citations?user=vnjqdE4AAAAJ",
+      "https://orcid.org/0000-0002-4062-1595",
+      "https://www.linkedin.com/in/mohamad-iyad/",
+      "https://www.researchgate.net/profile/Mohamad-Iyad-Al-Khiami-2",
+      "https://www.youtube.com/@mohamadiyadalkhiami6366"
+    ]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css?v=14" />
+</head>
+<body>
+
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <!-- ======= NAV ======= -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <div class="nav-logo">M<span>.</span>I<span>.</span> Al-Khiami</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#impact">Impact</a></li>
+        <li><a href="#funding">Funding</a></li>
+        <li><a href="#journey">Background</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#supervision">Projects</a></li>
+        <li><a href="#tools">Tools</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#sdg">SDGs</a></li>
+        <li><a href="#collaborate">Collaborate</a></li>
+        <li><button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme"></button></li>
+      </ul>
+      <button class="nav-burger" id="nav-burger" aria-label="Menu">☰</button>
+    </div>
+  </nav>
+
+  <!-- ======= HERO ======= -->
+  <header class="hero">
+    <canvas id="particle-canvas"></canvas>
+    <div class="container hero-content">
+      <div class="hero-kicker">Assistant Professor · Chartered Professional Engineer</div>
+      <h1>Mohamad Iyad<br /><em>Al-Khiami</em></h1>
+      <p class="hero-sub">
+        <strong>Construction Management &amp; Building Informatics.</strong>
+        Researching <span class="hero-rotator" id="hero-rotator">industrial exoskeletons</span><br />
+        to build a safer, smarter, and more human construction industry.
+      </p>
+      <div class="hero-affil">
+        <span>Civil Engineering Department, College of Engineering — Australian University, Kuwait</span>
+        <span>External Lecturer, Dept. of the Built Environment — Aalborg University, Denmark</span>
+      </div>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="assets/docs/Al-Khiami_CV.pdf" download><svg class="btn-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Download CV</a>
+        <a class="btn btn-ghost" href="https://scholar.google.com/citations?user=vnjqdE4AAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+        <a class="btn btn-ghost" href="#collaborate">Work with me</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat stat-live"><span class="live-dot"></span>
+          <div class="stat-num" data-stat="stat-citations" data-count="0">0<span class="plus"></span></div>
+          <div class="stat-label">Citations</div>
+        </div>
+        <div class="stat stat-live"><span class="live-dot"></span>
+          <div class="stat-num" data-stat="stat-hindex" data-count="0">0<span class="plus"></span></div>
+          <div class="stat-label">h-index</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" data-stat="stat-pubs" data-count="0">0<span class="plus"></span></div>
+          <div class="stat-label">Publications</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" data-count="500">0<span class="plus">+</span></div>
+          <div class="stat-label">Students taught</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" data-count="10">0<span class="plus">+</span></div>
+          <div class="stat-label">Years experience</div>
+        </div>
+      </div>
+    </div>
+    <a class="scroll-hint" href="#about" aria-label="Scroll down">↓</a>
+  </header>
+
+  <!-- ======= ABOUT ======= -->
+  <section id="about">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="kicker">About</div>
+        <h2>Bridging the jobsite and the lecture hall</h2>
+      </div>
+      <div class="about-grid">
+        <div class="portrait-wrap reveal">
+          <div class="portrait-frame"></div>
+          <img id="portrait-img" class="portrait" src="assets/images/profile.jpg" alt="Portrait of Mohamad Iyad Al-Khiami" />
+          <div class="cred-badges">
+            <span class="badge">CPEng</span>
+            <span class="badge">MIEAust</span>
+            <span class="badge">NER</span>
+            <span class="badge">APEC IntPE (AUS)</span>
+            <span class="badge">MSc</span>
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <p class="lede">
+            I am an Assistant Professor of Civil Engineering with one foot on the construction
+            site and the other in the research lab — a Chartered Professional Engineer who
+            studies how emerging technology can protect and empower the people who build our world.
+          </p>
+          <p>
+            My research sits at the intersection of <strong>construction management</strong> and
+            <strong>building informatics</strong>: industrial exoskeletons that reduce work-related
+            musculoskeletal disorders, computer-vision systems that watch over site safety, virtual
+            reality that lets engineering students walk through a structure before they calculate it,
+            and applied AI — from machine learning to vision-language models — that turns construction
+            data into decisions.
+          </p>
+          <p>
+            I completed my PhD research at Aalborg University, Denmark, on integrating industrial
+            exoskeletons into the construction sector, hold an MSc in Design &amp; Construction Project
+            Management from Chalmers University of Technology, Sweden, and spent 6+ years delivering
+            real projects in industry before academia. That combination shapes everything I do:
+            research that works in the field, and teaching that prepares engineers for reality.
+          </p>
+          <div class="chips">
+            <span class="chip">Exoskeletons</span>
+            <span class="chip">Robotics</span>
+            <span class="chip">Construction Management</span>
+            <span class="chip">Building Informatics</span>
+            <span class="chip">Virtual Reality</span>
+            <span class="chip">Applied AI &amp; ML</span>
+            <span class="chip">VLMs · LLMs</span>
+            <span class="chip">Occupational Health &amp; Safety</span>
+            <span class="chip">Ergonomics</span>
+            <span class="chip">Engineering Education</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= SCHOLARLY IMPACT ======= -->
+  <section id="impact" class="section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="kicker">Scholarly Impact</div>
+        <h2>Research that is read, cited, and used</h2>
+        <p>Metrics are pulled automatically from my Google Scholar profile.</p>
+      </div>
+      <div class="impact-grid">
+        <div class="impact-card reveal">
+          <div class="metric-row"><span class="m-label">Total citations</span><span class="m-value" data-stat="stat-citations" data-count="0">0</span></div>
+          <div class="metric-row"><span class="m-label">h-index</span><span class="m-value" data-stat="stat-hindex" data-count="0">0</span></div>
+          <div class="metric-row"><span class="m-label">i10-index</span><span class="m-value" data-stat="stat-i10" data-count="0">0</span></div>
+          <div class="metric-row"><span class="m-label">Peer-reviewed outputs</span><span class="m-value" data-stat="stat-pubs" data-count="0">0</span></div>
+          <div class="updated-note"><span class="live-dot"></span> Auto-synced from Google Scholar · <span class="js-updated"></span></div>
+        </div>
+        <div class="impact-card reveal">
+          <div class="chart-title">Citations per year</div>
+          <canvas id="citations-chart"></canvas>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= GRANTS & FUNDING ======= -->
+  <section id="funding">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="kicker">Grants &amp; Funding</div>
+        <h2>Funded research, from lab to jobsite</h2>
+        <p>≈ USD 260,000 in competitive research funding secured to date — twice as Principal Investigator, with funders and partners across Kuwait, Denmark, and the United States.</p>
+      </div>
+      <div class="grant-list">
+        <article class="grant-card reveal">
+          <div class="grant-top">
+            <div class="logo-tile grant-logo"><img src="assets/images/logos/kfas.png" alt="KFAS" loading="lazy" /></div>
+            <span class="role-badge pi">Principal Investigator</span>
+            <span class="grant-status upcoming">Sep 2026 — Sep 2028</span>
+          </div>
+          <h3>Systematic Evaluation of Passive Back-Support Exoskeletons and Adaptive Workstation Technologies for Reducing Work-Related Musculoskeletal Disorders in Kuwait's Construction Industry</h3>
+          <div class="grant-meta">
+            <span class="grant-funder">Kuwait Foundation for the Advancement of Sciences (KFAS)</span>
+            <span class="grant-amount">≈ USD 40,000</span>
+          </div>
+          <p>Laboratory trials and live construction-site studies comparing two ergonomic strategies — supporting the worker (passive back-support exoskeletons) versus eliminating the harmful posture itself (an adaptive workstation developed into a Smart Adaptive Lifting Assistant, SALA) — using EMG, IMU posture tracking, AI-based motion analysis, and physiological monitoring under Kuwait's field conditions.</p>
+          <details>
+            <summary>Full abstract</summary>
+            <p>Work-related musculoskeletal disorders (WMSDs) of construction workers are reported to be higher than all other industries combined, with workers experiencing particularly high rates due to repetitive bending, lifting, and awkward postures during manual material handling activities. Statistics show that in Kuwait, back pain represents the most prominent injury with a prevalence of 34.12% across workers. In Kuwait's rapidly expanding construction sector, these injuries result in significant healthcare costs, productivity losses, and workforce sustainability challenges, yet limited research has systematically evaluated ergonomic interventions specifically for construction work environments.</p>
+            <p>This research proposes a comprehensive study combining controlled laboratory experiments and real-world construction site evaluations to assess the effectiveness of two complementary back-targeted ergonomic interventions: passive back-support exoskeletons (BSEs) and an adaptive workstation concept, implemented as a height-adjustable roller table and further developed into a Smart Adaptive Lifting Assistant (SALA). The two interventions represent fundamentally different ergonomic strategies: supporting the worker bearing the load (exoskeleton) versus eliminating the harmful posture itself (workstation), and will be evaluated individually and in combination. Construction workers will be recruited for controlled trials in laboratory settings simulating realistic manual handling tasks, followed by field validation studies at active construction sites to assess real-world applicability and user acceptance.</p>
+            <p>Data collection will integrate multiple assessment modalities including electromyography (EMG) sensors for muscle activation analysis, inertial measurement units (IMUs) for posture tracking, video analysis using AI-based motion detection algorithms, heart rate monitoring for physiological stress assessment, and validated survey instruments measuring workload perception, comfort, and technology acceptance. Both quantitative and qualitative data will be analyzed to quantify ergonomic improvements, identify optimal intervention strategies, and evaluate practical implementation challenges under Kuwait's field conditions, including sustained heat exposure.</p>
+            <p>Expected outcomes include evidence-based guidelines for back-targeted ergonomic intervention selection in construction applications, validated protocols for technology integration, comprehensive cost-benefit analysis for Kuwait's construction industry, and field-tested implementation strategies addressing real-world deployment challenges. This interdisciplinary research, combining engineering, occupational health, automation, robotics, and artificial intelligence approaches, directly supports Kuwait's Vision 2035 human capital development goals while contributing to global knowledge in construction ergonomics and worker safety technology.</p>
+          </details>
+        </article>
+
+        <article class="grant-card reveal">
+          <div class="grant-top">
+            <div class="logo-tile grant-logo"><img src="assets/images/logos/kfas.png" alt="KFAS" loading="lazy" /></div>
+            <span class="role-badge coi">Co-Investigator</span>
+            <span class="grant-status upcoming">Sep 2026 — Sep 2028</span>
+          </div>
+          <h3>AI-Powered Multi-Tier Bridge Inspection Framework with Integrated Large Language Model (LLM) Decision Support</h3>
+          <div class="grant-meta">
+            <span class="grant-funder">KFAS — PI: Dr. Ahmad Assad</span>
+            <span class="grant-amount">≈ USD 50,000</span>
+          </div>
+          <p>UAVs, infrared thermography, and deep learning detect surface and subsurface bridge defects; NLP mines historical inspection reports; and everything fuses into a unified Bridge Condition Index visualized on an ArcGIS dashboard with an LLM-powered conversational interface for engineers and policymakers.</p>
+          <details>
+            <summary>Full abstract</summary>
+            <p>Highway bridges are vital infrastructure assets that ensure mobility, safety, and economic growth. Traditional inspection methods are often manual, subjective, and limited to surface observations, which hinders early detection of deterioration. This project proposes an AI-powered multi-tier bridge inspection framework that integrates unmanned aerial vehicles (UAVs), infrared thermography, and large language models (LLMs) to develop a comprehensive bridge condition assessment system for Kuwait. The framework employs multi-sensor data acquisition and deep learning-based models to detect and quantify surface and subsurface defects such as cracks, spalling, and delamination. In addition, Natural Language Processing (NLP) techniques will be utilized to extract defects and maintenance information from previous inspection reports. These multimodal datasets are then fused through the Fuzzy Analytical Network Process (FANP) to develop a unified Bridge Condition Index (BCI). In addition, a five-tier rating scale will be established through unsupervised clustering to support objective prioritization of maintenance needs. The integrated outputs will be visualized on an ArcGIS-based dashboard enhanced with an LLM-powered conversational interface. The LLM allows engineers and policymakers to inquire about bridge health and obtain real-time maintenance recommendations. This project presents a data-driven foundation for holistic bridge management that enhances inspection accuracy, efficiency, and objectivity. The outcomes of this project are expected to advance Kuwait's transition towards smart, resilient, and digitally managed infrastructure systems.</p>
+          </details>
+        </article>
+
+        <article class="grant-card reveal">
+          <div class="grant-top">
+            <div class="logo-tile grant-logo"><img src="assets/images/logos/purdue.png" alt="Purdue University" loading="lazy" /></div>
+            <span class="role-badge coi">Co-Investigator</span>
+            <span class="grant-status upcoming">Awarded Apr 2026</span>
+          </div>
+          <h3>Constructing the Future with SCAFFOLD: Integrating AI Literacy into the Engineering Curriculum</h3>
+          <div class="grant-meta">
+            <span class="grant-funder">Purdue University — Curriculum/Teaching Innovation Award · PI: Dr. Sayed M. Soleimani</span>
+            <span class="grant-amount">≈ USD 68,000</span>
+          </div>
+          <p>SCAFFOLD (System for Civil AI-Facilitated Feedback, Optimization, and Learning Design) is a fine-tuned "Socratic tutor" with pedagogical guardrails: it guides students through AISC steel design codes and construction-management scenarios with hints and code-clause references — never the final answer. Piloted at Purdue and integrated into courses in Germany and Kuwait for a comparative study of AI-assisted learning across regulatory environments (U.S. standards vs. Eurocode vs. Middle Eastern constraints).</p>
+        </article>
+
+        <article class="grant-card reveal">
+          <div class="grant-top">
+            <div class="logo-tile grant-logo"><img src="assets/images/logos/au.png" alt="Australian University" loading="lazy" /></div>
+            <span class="role-badge pi">Principal Investigator</span>
+            <span class="grant-status done">2024 — 2025</span>
+          </div>
+          <h3>Revolutionizing Worker Well-being and Productivity in Construction</h3>
+          <div class="grant-meta">
+            <span class="grant-funder">Australian University Internal Research Grant · IRC-2023/2024-SRC-PR02</span>
+            <span class="grant-amount">≈ USD 4,900</span>
+          </div>
+          <p>Integration of industrial exoskeletons to reduce work-related musculoskeletal disorders — the first comprehensive study on exoskeleton adoption in the Middle Eastern construction sector.</p>
+        </article>
+
+        <article class="grant-card reveal">
+          <div class="grant-top">
+            <div class="logo-tile grant-logo"><img src="assets/images/logos/kfas.png" alt="KFAS" loading="lazy" /></div>
+            <span class="role-badge coi">Co-Investigator</span>
+            <span class="grant-status done">2021 — 2023</span>
+          </div>
+          <h3>Development of a Novel Low-Energy Building</h3>
+          <div class="grant-meta">
+            <span class="grant-funder">Kuwait Foundation for the Advancement of Sciences (KFAS) · CN19-35EM-06</span>
+            <span class="grant-amount">≈ USD 96,000</span>
+          </div>
+          <p>Utilization of phase-change materials, cool roofs, and solar-assisted air conditioning — sustainable building solutions for hot-climate regions, published across multiple journals.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= BACKGROUND ======= -->
+  <section id="journey">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="kicker">Background</div>
+        <h2>Education &amp; appointments</h2>
+        <p>Six years on live construction projects, then a decade building the bridge between research, technology, and practice.</p>
+      </div>
+
+      <!-- Education -->
+      <h3 class="col-title reveal">Education</h3>
+      <div class="edu-grid">
+        <div class="edu-card reveal">
+          <div class="logo-tile edu-logo"><img src="assets/images/logos/aau.png" alt="Aalborg University" loading="lazy" /></div>
+          <div class="edu-years">2023 — 2026</div>
+          <h3>PhD in Civil Engineering</h3>
+          <div class="edu-org">Aalborg University, Denmark — Dept. of the Built Environment</div>
+          <p>Dissertation: industrial exoskeletons in construction workforces — adoption dynamics, ergonomic efficacy, and productivity gains in mitigating work-related musculoskeletal disorders. Supervisor: Assoc. Prof. Søren Munch Lindhard.</p>
+        </div>
+        <div class="edu-card reveal">
+          <div class="logo-tile edu-logo"><img src="assets/images/logos/chalmers.png" alt="Chalmers University of Technology" loading="lazy" /></div>
+          <div class="edu-years">2015 — 2017</div>
+          <h3>MSc, Design &amp; Construction Project Management</h3>
+          <div class="edu-org">Chalmers University of Technology, Sweden</div>
+          <p>Merit Scholarship for academic excellence. Thesis: the impact of BIM on design-phase productivity — the West Link megaproject case study. Plus a Nordic Built diploma in sustainability management at NTNU, Norway.</p>
+        </div>
+        <div class="edu-card reveal">
+          <div class="logo-tile edu-logo"><img src="assets/images/logos/ku.png" alt="Kuwait University" loading="lazy" /></div>
+          <div class="edu-years">2010 — 2015</div>
+          <h3>BSc in Civil Engineering</h3>
+          <div class="edu-org">Kuwait University</div>
+          <p>Fully funded scholarship; Excellence in Academic Performance awards (2012, 2014).</p>
+        </div>
+      </div>
+
+      <!-- Appointments -->
+      <div class="timeline-cols">
+        <div class="reveal">
+          <h3 class="col-title">Academic appointments</h3>
+          <div class="org-card">
+            <div class="org-head">
+              <div class="logo-tile org-logo"><img src="assets/images/logos/au.png" alt="Australian University" loading="lazy" /></div>
+              <div>
+                <h3>Australian University, Kuwait</h3>
+                <span>Civil Engineering Dept., College of Engineering · 2021 — Present</span>
+              </div>
+            </div>
+            <div class="ladder">
+              <div class="ladder-step current">
+                <div class="ladder-role">Assistant Professor<span class="current-tag">Current</span></div>
+                <div class="ladder-date">SEP 2026 — PRESENT</div>
+              </div>
+              <div class="ladder-step">
+                <div class="ladder-role">Senior Instructor</div>
+                <div class="ladder-date">APR 2025 — SEP 2026</div>
+              </div>
+              <div class="ladder-step">
+                <div class="ladder-role">Instructor</div>
+                <div class="ladder-date">FEB 2021 — APR 2025</div>
+              </div>
+            </div>
+            <p class="org-note">Teaching 70–80 students per semester across 12+ undergraduate courses. Launched the program's first BIM course, pioneered VR and AI in the curriculum, and contributed to the Engineers Australia accreditation of the Civil Engineering program.</p>
+          </div>
+          <div class="org-card">
+            <div class="org-head">
+              <div class="logo-tile org-logo"><img src="assets/images/logos/aau.png" alt="Aalborg University" loading="lazy" /></div>
+              <div>
+                <h3>Aalborg University, Denmark</h3>
+                <span>Department of the Built Environment</span>
+              </div>
+            </div>
+            <div class="ladder">
+              <div class="ladder-step current">
+                <div class="ladder-role">External Lecturer<span class="current-tag">Current</span></div>
+                <div class="ladder-date">2026 — PRESENT</div>
+              </div>
+            </div>
+            <p class="org-note">Lecturing in construction management and informatics, continuing the research collaboration built during the PhD.</p>
+          </div>
+          <div class="org-card">
+            <div class="org-head">
+              <div class="logo-tile org-logo"><img src="assets/images/logos/chalmers.png" alt="Chalmers University of Technology" loading="lazy" /></div>
+              <div>
+                <h3>Chalmers University of Technology, Sweden</h3>
+                <span>Construction Management</span>
+              </div>
+            </div>
+            <div class="ladder">
+              <div class="ladder-step">
+                <div class="ladder-role">Research &amp; Teaching Assistant</div>
+                <div class="ladder-date">2015 — 2017</div>
+              </div>
+            </div>
+            <p class="org-note">Conducted construction-management research while pursuing graduate studies; led revision sessions for construction management courses.</p>
+          </div>
+        </div>
+        <div class="reveal">
+          <h3 class="col-title">Industry appointments</h3>
+          <div class="org-card industry">
+            <div class="org-head">
+              <div>
+                <h3>Engineers Australia</h3>
+                <span>NER · APEC IntPE (AUS)</span>
+              </div>
+            </div>
+            <div class="ladder">
+              <div class="ladder-step current">
+                <div class="ladder-role">Chartered Professional Engineer (CPEng)<span class="current-tag">Current</span></div>
+                <div class="ladder-date">2023 — PRESENT</div>
+              </div>
+            </div>
+            <p class="org-note">Chartered in civil engineering, construction engineering, and project management. Member of Engineers Australia and the Kuwait Society of Engineers.</p>
+          </div>
+          <div class="org-card industry">
+            <div class="org-head">
+              <div>
+                <h3>Dar Al-Dabbous Engineering &amp; Consulting Bureau, Kuwait</h3>
+                <span>Design &amp; construction consultancy</span>
+              </div>
+            </div>
+            <div class="ladder">
+              <div class="ladder-step">
+                <div class="ladder-role">Civil Engineer — Design &amp; Implementation</div>
+                <div class="ladder-date">2019 — 2021</div>
+              </div>
+              <div class="ladder-step">
+                <div class="ladder-role">Project Scheduler</div>
+                <div class="ladder-date">2015 — 2017</div>
+              </div>
+            </div>
+            <p class="org-note">Design review, construction planning, scheduling, site inspection, and critical-path analysis across infrastructure and building projects.</p>
+          </div>
+          <div class="org-card industry">
+            <div class="org-head">
+              <div>
+                <h3>Tarmeem Trading &amp; Contracting, Kuwait</h3>
+                <span>Kuwait Refinery Project</span>
+              </div>
+            </div>
+            <div class="ladder">
+              <div class="ladder-step">
+                <div class="ladder-role">Site Engineer</div>
+                <div class="ladder-date">2017 — 2019</div>
+              </div>
+            </div>
+            <p class="org-note">Structural building execution, construction operations, and quality control on one of Kuwait's largest industrial projects.</p>
+          </div>
+          <div class="org-card industry">
+            <div class="org-head">
+              <div class="logo-tile org-logo"><img src="assets/images/logos/trafikverket.png" alt="Trafikverket" loading="lazy" /></div>
+              <div>
+                <h3>Trafikverket, Sweden</h3>
+                <span>Swedish Transport Administration — R&amp;D Department</span>
+              </div>
+            </div>
+            <div class="ladder">
+              <div class="ladder-step">
+                <div class="ladder-role">Research Assistant</div>
+                <div class="ladder-date">2016 — 2017</div>
+              </div>
+            </div>
+            <p class="org-note">Evaluated BIM integration in transportation infrastructure for the West Link megaproject.</p>
+          </div>
+          <div class="org-card industry">
+            <div class="org-head">
+              <div>
+                <h3>Spectrum Trading &amp; Contracting, Kuwait</h3>
+                <span>Commercial building projects</span>
+              </div>
+            </div>
+            <div class="ladder">
+              <div class="ladder-step">
+                <div class="ladder-role">Civil Engineer</div>
+                <div class="ladder-date">2014 — 2015</div>
+              </div>
+            </div>
+            <p class="org-note">Site supervision, quality assurance, and coordination with design teams on commercial buildings.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= RESEARCH ======= -->
+  <section id="research" class="section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="kicker">Research</div>
+        <h2>What I'm curious about</h2>
+        <p>Human-centric construction technology: augmenting people, not replacing them.</p>
+      </div>
+      <div class="card-grid">
+        <div class="r-card reveal"><div class="r-num">01</div><h3>Exoskeletons &amp; Wearable Robotics</h3><p>Field and lab evaluation of back-support exoskeletons — EMG, posture, fatigue, comfort, and adoption among real construction workers.</p></div>
+        <div class="r-card reveal"><div class="r-num">02</div><h3>Robotics &amp; Computer Vision</h3><p>YOLO-based PPE compliance detection, AI-driven ergonomic assessment, and robotics applications on construction sites.</p></div>
+        <div class="r-card reveal"><div class="r-num">03</div><h3>Construction Management</h3><p>Productivity, planning, and Industry 4.0/5.0 transformation of construction processes and workforces.</p></div>
+        <div class="r-card reveal"><div class="r-num">04</div><h3>Building Informatics &amp; BIM</h3><p>Building Information Modeling, digital twins, and IoT-driven building performance in extreme climates.</p></div>
+        <div class="r-card reveal"><div class="r-num">05</div><h3>Virtual Reality</h3><p>VR for construction safety training and engineering education — motivation, performance, usability, and gamification.</p></div>
+        <div class="r-card reveal"><div class="r-num">06</div><h3>Applied AI · ML · VLMs · LLMs</h3><p>Machine learning, vision-language models, and LLMs applied to safety monitoring, education, and construction workflows.</p></div>
+        <div class="r-card reveal"><div class="r-num">07</div><h3>Occupational Health &amp; Safety</h3><p>Work-related musculoskeletal disorders, cross-cultural reporting behaviors, and prevention strategies for construction workers.</p></div>
+        <div class="r-card reveal"><div class="r-num">08</div><h3>Engineering Education</h3><p>Evidence-based pedagogy: flipped classrooms, digital techniques, and immersive technology in the engineering curriculum.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= PUBLICATIONS ======= -->
+  <section id="publications">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="kicker">Publications</div>
+        <h2>Peer-reviewed research</h2>
+        <p>Filter, search, read the abstract, or copy a ready-made BibTeX citation.</p>
+      </div>
+      <div class="featured-grid reveal">
+        <a class="feat-card" href="https://doi.org/10.1061/JCEMD4.COENG-15899" target="_blank" rel="noopener">
+          <span class="feat-tag">Featured</span>
+          <h3>Paradox in Practice: WMSD Prevalence and Reporting among Construction Workers in Kuwait and Denmark</h3>
+          <p>Cross-country evidence on why construction workers under-report musculoskeletal disorders — and what that means for prevention.</p>
+          <span class="feat-venue">Journal of Construction Engineering and Management (ASCE) · 2025</span>
+        </a>
+        <a class="feat-card" href="https://doi.org/10.1108/ECAM-05-2024-0563" target="_blank" rel="noopener">
+          <span class="feat-tag">Featured</span>
+          <h3>Integrating Exoskeletons in the Construction Sector: A Systematic Review</h3>
+          <p>The field-defining PRISMA review of how exoskeletons are evaluated in construction — and the roadmap for real-world adoption.</p>
+          <span class="feat-venue">Engineering, Construction and Architectural Management · 2024</span>
+        </a>
+        <a class="feat-card" href="https://doi.org/10.1111/jcal.12881" target="_blank" rel="noopener">
+          <span class="feat-tag">Featured</span>
+          <h3>Enhancing Concrete Structures Education: The Impact of Virtual Reality</h3>
+          <p>Controlled evidence that VR measurably lifts engineering students' motivation and performance.</p>
+          <span class="feat-venue">Journal of Computer Assisted Learning · 2024</span>
+        </a>
+      </div>
+      <div class="pub-controls reveal">
+        <div class="pub-filters">
+          <button class="filter-btn active" data-type="all">All</button>
+          <button class="filter-btn" data-type="journal">Journals</button>
+          <button class="filter-btn" data-type="conference">Conferences</button>
+          <button class="filter-btn" data-type="chapter">Book chapters</button>
+          <button class="filter-btn" data-type="other">Other</button>
+        </div>
+        <input type="search" id="pub-search" class="pub-search" placeholder="Search title, topic, venue…" />
+        <a class="filter-btn" href="assets/docs/Al-Khiami-publications.bib" download>Download all (.bib)</a>
+        <span class="pub-count" id="pub-count"></span>
+      </div>
+      <div class="pub-list reveal" id="pub-list"></div>
+    </div>
+  </section>
+
+  <!-- ======= TEACHING ======= -->
+  <section id="teaching" class="section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="kicker">Teaching</div>
+        <h2>Engineers are made by doing</h2>
+      </div>
+      <div class="teach-grid">
+        <div class="reveal">
+          <div class="quote-card">
+            <blockquote>
+              I treat each student as I would my own brother or sister. When students know they
+              are genuinely cared for, they rise to meet even the highest expectations — and
+              engineering asks a great deal of them.
+            </blockquote>
+            <cite>— From my teaching philosophy</cite>
+          </div>
+          <div class="award-callout">
+            <div class="callout-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.79 13.88 17 23l-5-3-5 3 1.21-9.12"/></svg></div>
+            <div>
+              <strong>Australian University Teaching Excellence Award 2024/2025</strong>
+              <span>Top teaching-award recipient across all engineering departments</span>
+            </div>
+          </div>
+          <div class="award-callout">
+            <div class="callout-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+            <div>
+              <strong>Curriculum pioneer</strong>
+              <span>Launched the program's first BIM course and introduced VR, AI, and flipped-classroom learning into the civil engineering curriculum</span>
+            </div>
+          </div>
+        </div>
+        <div class="reveal">
+          <h3 class="col-title">Courses I teach</h3>
+          <div class="course-grid">
+            <div class="course">Design of Concrete Structures</div>
+            <div class="course">Design of Steel Structures</div>
+            <div class="course">Construction Management</div>
+            <div class="course">Building Information Modeling (BIM)</div>
+            <div class="course">Revit Design</div>
+            <div class="course">Civil Engineering Materials</div>
+            <div class="course">Basic Construction</div>
+            <div class="course">Statics</div>
+            <div class="course">Strength of Materials</div>
+            <div class="course">Engineering Skills</div>
+            <div class="course">Project-Based Learning</div>
+            <div class="course">Engineering Ethics</div>
+            <div class="course">Capstone Design</div>
+            <div class="course">Engineering Drawings</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-strip reveal">
+        <div class="kicker">From student evaluations of teaching</div>
+        <div class="testimonial-row">
+          <blockquote class="testimonial">
+            <p>"The instructor provided great guidance, and was very supportive and understanding of students' situations."</p>
+            <cite>— Student Evaluation of Teaching, Australian University</cite>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p>"He deals with us in a very professional way… explains the material very well, and is always available in office hours."</p>
+            <cite>— Student Evaluation of Teaching, Australian University</cite>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p>"One of the best teachers I have ever studied with — I wish that he teaches me in my future courses."</p>
+            <cite>— Student Evaluation of Teaching, Australian University</cite>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= SUPERVISION & PROTOTYPES ======= -->
+  <section id="supervision">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="kicker">Supervision &amp; Prototypes</div>
+        <h2>Graduation projects that build real things</h2>
+        <p>100% completion rate · multiple national competition awards. Every project ships a working prototype.</p>
+      </div>
+      <div class="proj-grid">
+        <div class="proj-card reveal">
+          <div class="proj-meta"><span class="proj-year">2025 — 2026</span><span class="award-badge">1st Place</span></div>
+          <h3>Robotics in Construction using Computer Vision</h3>
+          <p>Autonomous robotics guided by computer vision for construction-site tasks — first-place award winner.</p>
+          <div class="proj-photos">
+            <img class="proj-thumb" src="assets/images/gallery/grad-robotics-4.jpg" alt="The quadruped robot prototype"
+              data-caption="The prototype: a quadruped robot with computer vision for construction-site monitoring — 1st place graduation project" loading="lazy" />
+            <span class="proj-thumb proj-thumb-video" data-video="assets/videos/grad-robotics-demo.mp4"
+              data-poster="assets/images/gallery/grad-robotics-demo-poster.jpg"
+              data-caption="Robot dog in action — live demo of the award-winning robotics graduation project">
+              <img src="assets/images/gallery/grad-robotics-demo-poster.jpg" alt="Robot demo video" loading="lazy" />
+            </span>
+            <img class="proj-thumb" src="assets/images/gallery/grad-robotics-1.jpg" alt="The winning team"
+              data-caption="The winning team with their certificates — &quot;First Winning Project in Civil Engineering&quot;, Australian University" loading="lazy" />
+          </div>
+        </div>
+        <div class="proj-card reveal">
+          <div class="proj-meta"><span class="proj-year">2024 — 2025</span><span class="award-badge silver">2nd Place</span></div>
+          <h3>Investigating Exosuit Efficacy: Physiological Impacts in WMSD Prevention</h3>
+          <p>A controlled study measuring the physiological effects of exosuits on workers performing repetitive tasks.</p>
+          <div class="proj-photos">
+            <img class="proj-thumb" src="assets/images/gallery/grad-exosuit-team.jpg" alt="The exosuit team receiving 2nd place"
+              data-caption="With the exosuit research team — 2nd place, Exhibition of Engineering Students' Graduation Projects, Spring 2024/2025" loading="lazy" />
+            <span class="proj-thumb proj-thumb-video" data-video="assets/videos/grad-exosuit-award.mp4"
+              data-poster="assets/images/gallery/grad-exosuit-award-poster.jpg"
+              data-caption="The award moment — the exosuit team receives 2nd place in Civil Engineering">
+              <img src="assets/images/gallery/grad-exosuit-award-poster.jpg" alt="Award ceremony video" loading="lazy" />
+            </span>
+          </div>
+        </div>
+        <div class="proj-card reveal">
+          <div class="proj-meta"><span class="proj-year">2024 — 2025</span></div>
+          <h3>Ergonomics in Construction: Mitigating WMSDs Using Exosuits</h3>
+          <p>Field-oriented evaluation of exosuit-based interventions for reducing musculoskeletal strain.</p>
+        </div>
+        <div class="proj-card reveal">
+          <div class="proj-meta"><span class="proj-year">2022 — 2023</span><span class="award-badge silver">2nd Place</span></div>
+          <h3>Automated PPE Compliance Detection with AI</h3>
+          <p>A custom-trained YOLOv8 model that detects personal protective equipment compliance in real time — later published at EC3 2024.</p>
+          <div class="proj-photos">
+            <img class="proj-thumb" src="assets/images/gallery/grad-yolo-team.jpg" alt="The YOLOv8 team"
+              data-caption="The YOLOv8 PPE-detection team — the graduation project that became the EC3 2024 paper" loading="lazy" />
+          </div>
+        </div>
+        <div class="proj-card reveal">
+          <div class="proj-meta"><span class="proj-year">2022 — 2023</span></div>
+          <h3>ML Defect Detection for Safety Harnesses &amp; Lanyards</h3>
+          <p>Machine learning models that identify defects in fall-protection equipment before it reaches the worker.</p>
+        </div>
+        <div class="proj-card reveal">
+          <div class="proj-meta"><span class="proj-year">2022 — 2023</span></div>
+          <h3>AI Assessment of Plywood Re-usability Post Concrete Casting</h3>
+          <p>Computer vision that grades formwork plywood for reuse — cutting waste and cost on site.</p>
+        </div>
+        <div class="proj-card reveal">
+          <div class="proj-meta"><span class="proj-year">2022 — 2023</span></div>
+          <h3>VR Safety &amp; Hazard-Detection Training for Blue-Collar Workers</h3>
+          <p>An immersive VR environment that trains construction laborers to spot site hazards safely.</p>
+        </div>
+        <div class="proj-card reveal">
+          <div class="proj-meta"><span class="proj-year">Ongoing</span></div>
+          <h3>Open code &amp; datasets</h3>
+          <p>Models, VR environments, and evaluation protocols from these projects are being prepared for open release — reach out if you'd like early access for research use.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= TOOLS ======= -->
+  <section id="tools" class="section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="kicker">Tools</div>
+        <h2>Free tools for engineering students</h2>
+        <p>Interactive learning tools I build for my students — free for anyone, anywhere.</p>
+      </div>
+      <a class="tool-hero reveal" href="tools/beam-lab.html">
+        <div class="tool-hero-text">
+          <span class="feat-tag">Interactive · Free</span>
+          <h3>Beam Lab</h3>
+          <p>Build a beam — pins, rollers, fixed supports, internal hinges. Load it with point forces,
+            moments, and uniform, triangular, or trapezoidal distributed loads. Watch the reactions,
+            shear, and bending moment diagrams respond live, with a hover readout of V(x) and M(x)
+            at any section.</p>
+          <p><strong>Practice mode:</strong> generate a random beam, solve it on paper, then reveal
+            the reactions and diagrams to check yourself — exactly how statics should be practiced.</p>
+          <span class="btn btn-primary">Open Beam Lab →</span>
+        </div>
+        <div class="tool-hero-art" aria-hidden="true">
+          <svg viewBox="0 0 300 190">
+            <rect x="30" y="78" width="240" height="7" rx="2" fill="currentColor" class="th-beam"/>
+            <path d="M45 87 L33 106 L57 106 Z" fill="none" class="th-sup"/>
+            <path d="M255 87 L243 106 L267 106 Z" fill="none" class="th-sup"/>
+            <circle cx="249" cy="111" r="3.4" fill="none" class="th-sup"/>
+            <circle cx="261" cy="111" r="3.4" fill="none" class="th-sup"/>
+            <line x1="150" y1="34" x2="150" y2="70" class="th-load"/>
+            <path d="M144 62 L150 74 L156 62 Z" class="th-loadhead"/>
+            <path d="M40 160 L150 118 L260 160" fill="none" class="th-moment"/>
+            <path d="M40 160 L150 118 L260 160 L40 160 Z" class="th-momentfill"/>
+          </svg>
+        </div>
+      </a>
+      <p class="tool-more reveal">More tools are on the drawing board — truss analysis, section properties, and more.</p>
+    </div>
+  </section>
+
+  <!-- ======= GALLERY ======= -->
+  <section id="gallery">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="kicker">Gallery</div>
+        <h2>In the field, in the lab, in the classroom</h2>
+        <p>Site visits with students, graduation-project prototypes, and moments from conferences and teaching.</p>
+      </div>
+      <div class="gallery-controls reveal" id="gallery-controls"></div>
+      <div class="gallery-grid reveal" id="gallery-grid"></div>
+      <div class="yt-callout reveal">
+        <div class="yt-text" style="display:flex;align-items:center;gap:1rem;">
+          <img src="assets/images/icons/youtube.svg" alt="YouTube" style="width:38px;height:38px;flex-shrink:0;" />
+          <div>
+            <strong>More on my YouTube channel</strong>
+            <span>Lectures, project demos, and research walkthroughs — subscribe to follow along.</span>
+          </div>
+        </div>
+        <a class="btn btn-youtube" href="https://www.youtube.com/@mohamadiyadalkhiami6366" target="_blank" rel="noopener">Visit channel</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox (click any gallery photo) -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-label="Photo viewer">
+    <button class="lightbox-close" aria-label="Close">×</button>
+    <img src="" alt="" />
+    <video controls playsinline style="display:none"></video>
+    <div class="lightbox-caption"></div>
+  </div>
+
+  <!-- ======= SDG ======= -->
+  <section id="sdg" class="section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="kicker">Global Impact</div>
+        <h2>UN Sustainable Development Goals I contribute to</h2>
+        <p>Hover a tile to see how my work maps to each goal.</p>
+      </div>
+      <div class="sdg-grid">
+        <div class="sdg-tile reveal" tabindex="0">
+          <div class="sdg-inner">
+            <div class="sdg-face sdg-front sdg-3"><div class="sdg-num">3</div><div class="sdg-name">Good Health &amp; Well-Being</div></div>
+            <div class="sdg-face sdg-back">Exoskeleton research, ergonomics, and WMSD prevention directly protect the long-term health of construction workers — one of the world's most injury-prone workforces.</div>
+          </div>
+        </div>
+        <div class="sdg-tile reveal" tabindex="0">
+          <div class="sdg-inner">
+            <div class="sdg-face sdg-front sdg-4"><div class="sdg-num">4</div><div class="sdg-name">Quality Education</div></div>
+            <div class="sdg-face sdg-back">VR classrooms, flipped learning, and AI-assisted teaching make engineering education more effective, engaging, and accessible — validated through published research.</div>
+          </div>
+        </div>
+        <div class="sdg-tile reveal" tabindex="0">
+          <div class="sdg-inner">
+            <div class="sdg-face sdg-front sdg-9"><div class="sdg-num">9</div><div class="sdg-name">Industry, Innovation &amp; Infrastructure</div></div>
+            <div class="sdg-face sdg-back">Industry 4.0/5.0 technologies — robotics, computer vision, BIM, and digital twins — modernize how infrastructure is designed, built, and maintained.</div>
+          </div>
+        </div>
+        <div class="sdg-tile reveal" tabindex="0">
+          <div class="sdg-inner">
+            <div class="sdg-face sdg-front sdg-11"><div class="sdg-num">11</div><div class="sdg-name">Sustainable Cities &amp; Communities</div></div>
+            <div class="sdg-back sdg-face">Low-energy building research — phase-change materials, cool roofs, and solar-assisted cooling — makes buildings in extreme climates dramatically more sustainable.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= COLLABORATIONS & NEWS ======= -->
+  <section id="collaborations">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>A global collaboration network</h2>
+        <p>Research partnerships and professional ties across four continents — hover a marker for details.</p>
+      </div>
+      <div class="map-wrap reveal" id="collab-map"></div>
+      <div class="collab-grid">
+        <div class="collab-card reveal"><div class="collab-logo-tile"><img src="assets/images/logos/aau.png" alt="Aalborg University logo" loading="lazy" /></div><h3>Aalborg University, Denmark</h3><p>PhD research &amp; external lecturing — Dept. of the Built Environment, with S. M. Lindhard &amp; S. Wandahl</p></div>
+        <div class="collab-card reveal"><div class="collab-logo-tile"><img src="assets/images/logos/chalmers.png" alt="Chalmers University of Technology seal" loading="lazy" /></div><h3>Chalmers University of Technology, Sweden</h3><p>MSc alma mater — BIM productivity research with Trafikverket on the West Link megaproject</p></div>
+        <div class="collab-card reveal"><div class="collab-logo-tile"><img src="assets/images/logos/kfas.png" alt="KFAS logo" loading="lazy" /></div><h3>KFAS, Kuwait</h3><p>Kuwait Foundation for the Advancement of Sciences — three funded projects: low-energy buildings, exoskeletons &amp; adaptive workstations, AI bridge inspection</p></div>
+        <div class="collab-card reveal"><div class="collab-logo-tile"><img src="assets/images/logos/ku.png" alt="Kuwait University emblem" loading="lazy" /></div><h3>Kuwait University</h3><p>BSc alma mater — fully funded scholarship and Excellence in Academic Performance awards</p></div>
+        <div class="collab-card reveal"><div class="collab-logo-tile"><img src="assets/images/logos/au.png" alt="Australian University logo" loading="lazy" /></div><h3>Australian University, Kuwait</h3><p>VR education, AI safety systems, and exoskeleton research with Jaeger, Soleimani &amp; Sedaghat</p></div>
+        <div class="collab-card reveal"><div class="collab-logo-tile"><img src="assets/images/logos/purdue.png" alt="Purdue University logo" loading="lazy" /></div><h3>Purdue University, USA</h3><p>SCAFFOLD — AI literacy in the engineering curriculum, with Dr. Sayed M. Soleimani (Lyles School of Civil Engineering)</p></div>
+        <div class="collab-card reveal"><div class="collab-logo-tile mono-tile">EA</div><h3>Engineers Australia</h3><p>Chartered engineer, program accreditation contributor, and professional member</p></div>
+        <div class="collab-card reveal"><div class="collab-logo-tile mono-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div><h3>Reviewer &amp; committee service</h3><p>ASCE JCEM · IEEE EDUCON · accreditation, quality &amp; VR committees</p></div>
+      </div>
+
+      <div class="section-head reveal" style="margin-top: 4rem;">
+        <div class="kicker">Latest</div>
+        <h2>News &amp; current projects</h2>
+      </div>
+      <div class="news-list reveal">
+        <div class="news-item"><span class="news-date">2026</span><p>Three new research grants awarded: KFAS exoskeletons &amp; adaptive workstations study (as PI, ≈ USD 40K), KFAS AI-powered bridge inspection (Co-I, ≈ USD 50K), and Purdue University's SCAFFOLD AI-literacy award (Co-I, ≈ USD 68K).</p></div>
+        <div class="news-item"><span class="news-date">2026</span><p>Four new journal papers on back-support exoskeletons published in <em>Applied Ergonomics</em>, <em>Safety Science</em>, <em>ECAM</em>, and <em>Int. J. of Industrial Ergonomics</em>.</p></div>
+        <div class="news-item"><span class="news-date">AUG 2026</span><p>PhD defense expected — Aalborg University, Department of the Built Environment.</p></div>
+        <div class="news-item"><span class="news-date">2025 — 2026</span><p>Supervised graduation project "Robotics in Construction using Computer Vision" wins first place.</p></div>
+        <div class="news-item"><span class="news-date">2025</span><p>Received the Australian University Teaching Excellence Award — top recipient across all engineering departments.</p></div>
+        <div class="news-item"><span class="news-date">2024 — 2025</span><p>Principal Investigator — "Revolutionizing Worker Well-being and Productivity in Construction": first comprehensive study of exoskeleton adoption in the Middle East.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= COLLABORATE / CONTACT ======= -->
+  <section id="collaborate" class="section-alt">
+    <div class="container">
+      <div class="contact-wrap reveal">
+        <div class="kicker" style="justify-content:center;">Let's build together</div>
+        <h2>Open to <em>collaboration</em></h2>
+        <p>Whether you're a researcher, industry partner, or student — if you're working on making construction safer, smarter, or better taught, I'd love to hear from you.</p>
+      </div>
+      <div class="work-with">
+        <div class="ww-card reveal"><div class="r-num">01</div><h3>Research collaboration</h3><p>Joint publications, grant proposals, and cross-institutional studies on exoskeletons, safety AI, VR, and construction informatics.</p></div>
+        <div class="ww-card reveal"><div class="r-num">02</div><h3>Industry partnerships</h3><p>Pilot studies on your sites: exoskeleton trials, computer-vision safety monitoring, and digital-transformation consulting from a chartered engineer.</p></div>
+        <div class="ww-card reveal"><div class="r-num">03</div><h3>Student supervision</h3><p>Graduation projects and research supervision in construction technology, applied AI, and occupational safety.</p></div>
+        <div class="ww-card reveal"><div class="r-num">04</div><h3>Talks &amp; teaching</h3><p>Guest lectures, keynotes, and workshops on Industry 5.0, VR in education, and human-centric construction technology.</p></div>
+      </div>
+      <div class="contact-wrap reveal" style="margin-top: 3rem;">
+        <a class="btn btn-primary" href="mailto:m.iyadalkh@gmail.com"><svg class="btn-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>m.iyadalkh@gmail.com</a>
+        <div class="social-row">
+          <a class="social-link" href="https://scholar.google.com/citations?user=vnjqdE4AAAAJ" target="_blank" rel="noopener"><img class="brand-ico" src="assets/images/icons/googlescholar.svg" alt="" />Google Scholar</a>
+          <a class="social-link" href="https://orcid.org/0000-0002-4062-1595" target="_blank" rel="noopener"><img class="brand-ico" src="assets/images/icons/orcid.svg" alt="" />ORCID</a>
+          <a class="social-link" href="https://www.linkedin.com/in/mohamad-iyad/" target="_blank" rel="noopener"><img class="brand-ico" src="assets/images/icons/linkedin.svg" alt="" />LinkedIn</a>
+          <a class="social-link" href="https://www.researchgate.net/profile/Mohamad-Iyad-Al-Khiami-2" target="_blank" rel="noopener"><img class="brand-ico" src="assets/images/icons/researchgate.svg" alt="" />ResearchGate</a>
+          <a class="social-link" href="https://www.youtube.com/@mohamadiyadalkhiami6366" target="_blank" rel="noopener"><img class="brand-ico" src="assets/images/icons/youtube.svg" alt="" />YouTube</a>
+        </div>
+        <div class="qr-card reveal">
+          <img src="assets/images/contact-qr.png" alt="QR code — scan to save contact details" />
+          <div>
+            <strong>Meet me at a conference?</strong>
+            <span>Scan to save my contact card to your phone, or <a href="assets/docs/Al-Khiami.vcf" download>download the vCard</a>.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= FOOTER ======= -->
+  <footer>
+    <div class="container footer-inner">
+      <p>© <span id="footer-year"></span> Mohamad Iyad Al-Khiami · Construction Management &amp; Building Informatics</p>
+      <p class="visit-count">Data last synced <span class="js-updated"></span></p>
+      <p class="visit-count" id="visit-count"></p>
+    </div>
+  </footer>
+  <button class="back-top" id="back-top" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg></button>
+
+  <script data-goatcounter="https://miyadalkh.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+  <script src="data/worldmap.js?v=14"></script>
+  <script src="data/scholar.js?v=14"></script>
+  <script src="data/publications.js?v=14"></script>
+  <script src="data/gallery.js?v=14"></script>
+  <script src="js/main.js?v=14"></script>
+</body>
+</html>
