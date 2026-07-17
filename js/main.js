@@ -118,7 +118,10 @@ const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)
     "stat-hindex": s ? s.hIndex : 0,
     "stat-i10": s ? s.i10Index : 0,
     "stat-pubs": pubCount,
+    "stat-rgreads": s && s.rgReads ? s.rgReads : 0,
   };
+  const rgRow = document.getElementById("rg-row");
+  if (rgRow && s && s.rgReads) rgRow.style.display = "";
   document.querySelectorAll("[data-stat]").forEach((el) => {
     const key = el.dataset.stat;
     if (key in values) el.dataset.count = values[key];
@@ -335,19 +338,6 @@ function drawCitationsChart(instant) {
         });
         actions.appendChild(pBtn);
       }
-      const cite = document.createElement("button");
-      cite.className = "pub-action";
-      cite.textContent = "Cite (BibTeX)";
-      cite.addEventListener("click", async () => {
-        try {
-          await navigator.clipboard.writeText(bibtex(pub));
-          cite.textContent = "✓ Copied!";
-        } catch {
-          cite.textContent = "✗ Copy failed";
-        }
-        setTimeout(() => (cite.textContent = "Cite (BibTeX)"), 1800);
-      });
-      actions.appendChild(cite);
       listEl.appendChild(item);
     }
   }
@@ -505,7 +495,8 @@ function drawCitationsChart(instant) {
 
   const HOME = { name: "Kuwait", lat: 29.37, lon: 47.98, tip: "Kuwait — home base: Australian University · Kuwait University · KFAS" };
   const PARTNERS = [
-    { name: "Denmark", lat: 57.05, lon: 9.92, tip: "Denmark — Aalborg University: PhD research & external lecturing" },
+    { name: "Denmark", lat: 57.05, lon: 9.92, dy: -8, tip: "Denmark — Aalborg University: PhD research & external lecturing" },
+    { name: "Germany", lat: 51.0, lon: 10.3, dy: 12, tip: "Germany — SCAFFOLD comparative pilots in construction-management education" },
     { name: "USA", lat: 40.43, lon: -86.91, dy: 14, tip: "USA — Purdue University: SCAFFOLD, AI literacy in engineering education" },
     { name: "Canada", lat: 43.65, lon: -79.38, dy: -6, tip: "Canada — research collaboration" },
     { name: "Australia", lat: -33.87, lon: 151.21, tip: "Australia — Engineers Australia: chartered engineer & accreditation" },

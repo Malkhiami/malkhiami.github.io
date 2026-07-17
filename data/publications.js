@@ -5,7 +5,7 @@ const PUBLICATIONS = [
     "type": "journal",
     "year": 2026,
     "title": "Investigating the effects of back-support exoskeletons on work posture: An automated AI-based NIOSH measurement using YOLO",
-    "authors": "Al-Khiami, M. I., Lindhard, S. M., & Wandahl, S.",
+    "authors": "Al-Khiami, M. I., & Lindhard, S. M.",
     "venue": "Applied Ergonomics",
     "doi": "10.1016/j.apergo.2026.104766",
     "tags": [
@@ -14,7 +14,7 @@ const PUBLICATIONS = [
       "Ergonomics",
       "Computer Vision"
     ],
-    "abstract": "",
+    "abstract": "Work-related musculoskeletal disorders (WMSDs) are prevalent among masons with 58% reporting lower back pain from repetitive lifting and sustained trunk flexion. Back-support exoskeletons (BSEs) reduce muscle activation and claim to improve posture, yet evidence of their effectiveness in improving posture remains limited. This study investigated whether BSEs improve posture among 23 experienced masons performing masonry tasks, comparing rigid and soft designs. Participants lifted 17.2 kg concrete masonry units with and without exoskeletons. Using YOLO v11 pose estimation to analyze 351,615 video frames, trunk flexion and lateral bend angles were calculated against NIOSH thresholds. Results revealed minimal improvements. Mean trunk flexion reductions of 1.28° and 0.75° were reported, representing only 4.3% and 2.5% reduction in NIOSH risk categories. While BSEs reduce muscle activity, their effectiveness in improving posture is limited. This challenges BSE deployment as intervention for postural correction in masonry work.",
     "photos": [
       {
         "video": "assets/videos/exo-lab-testing.mp4",
@@ -28,7 +28,7 @@ const PUBLICATIONS = [
     "type": "journal",
     "year": 2026,
     "title": "Field comparison of rigid and soft passive back-support exoskeletons: physical exertion, comfort, and adoption among masonry workers",
-    "authors": "Al-Khiami, M. I., Lindhard, S. M., & Wandahl, S.",
+    "authors": "Al-Khiami, M. I., & Lindhard, S. M.",
     "venue": "Safety Science",
     "doi": "10.1016/j.ssci.2026.107138",
     "tags": [
@@ -36,7 +36,7 @@ const PUBLICATIONS = [
       "Health & Safety",
       "Construction"
     ],
-    "abstract": "",
+    "abstract": "Musculoskeletal disorders affect 46% of construction workers, causing major economic and organizational challenges. Despite the promise of wearable exoskeletons for mitigating strain, limited on-site comparative research exists, particularly across distinct designs. This study addresses that gap by evaluating two back-support exoskeletons, HAPO Back (rigid) and BISKO (soft textile-based), in realistic masonry tasks. Fifteen masons from five sites tested both exoskeletons over two days through structured interviews, yielding noticeable strain reductions relative to baseline conditions. BISKO reduced perceived fatigue by 50.53% and perceived exertion by 32.57%, outperforming HAPO’s 27.39% and 14.76% reductions, respectively. BISKO also excelled in comfort (35.94% better) and adjustability (49.11% better), resulting in significantly less movement hindrance. Contrasting acceptance patterns emerged: HAPO users reported a 158% drop in continued-use willingness, whereas BISKO showed only an 8.52% decline. Correlation analysis highlighted movement hindrance (r = 0.79) and adjustability (r = 0.76) as stronger predictors of ongoing use than physical benefits alone. These findings underscore the importance of lightweight, worker-friendly designs that integrate well with dynamic construction tasks. This research challenges conventional exoskeleton development that focuses primarily on mechanical load reduction. The field-based approach provides insights under actual working conditions, offering practical guidelines for future product development and adoption strategies. Ultimately, prioritizing comfort and usability emerges as a decisive factor for sustained exoskeleton usage, reinforcing the critical role of human-centered designs for construction ergonomics. Such emphasis is especially crucial for masons, whose tasks involve varied postures and material handling. Future studies should expand these comparisons to other trades to refine exoskeleton design guidelines.",
     "photos": [
       {
         "video": "assets/videos/exo-field-testing.mp4",
@@ -50,7 +50,7 @@ const PUBLICATIONS = [
     "type": "journal",
     "year": 2026,
     "title": "Individual variability in lumbar muscle activation with passive back-support exoskeletons: an EMG study of experienced construction workers",
-    "authors": "Al-Khiami, M. I., Lindhard, S. M., & Wandahl, S.",
+    "authors": "Al-Khiami, M. I., Lindhard, S. M., & Saad, A. S.",
     "venue": "Engineering, Construction and Architectural Management",
     "doi": "10.1108/ECAM-12-2025-2039",
     "tags": [
@@ -72,7 +72,7 @@ const PUBLICATIONS = [
     "type": "journal",
     "year": 2026,
     "title": "Laboratory and field evaluation of user-perceived effort, comfort, and acceptance of passive back-support exoskeletons for masons",
-    "authors": "Al-Khiami, M. I., Lindhard, S. M., & Wandahl, S.",
+    "authors": "Al-Khiami, M. I., Lindhard, S. M., & Saad, A. S.",
     "venue": "International Journal of Industrial Ergonomics",
     "doi": "10.1016/j.ergon.2026.103881",
     "tags": [
@@ -80,7 +80,7 @@ const PUBLICATIONS = [
       "Ergonomics",
       "Construction"
     ],
-    "abstract": "",
+    "abstract": "Work-related musculoskeletal disorders affect over 30% of construction workers globally, with back injuries particularly prevalent among masons who handle approximately 10,000 kg of masonry units daily. These injuries represent a critical occupational safety challenge, with masonry workers experiencing overexertion rates 33.4 per 10,000 FTEs compared to 21.5 across all industries. While back-support exoskeletons (BSEs) show promise as injury prevention interventions, most safety evaluations occur in laboratories, raising questions about real-world protective effectiveness. This study compared BSE performance between laboratory and field settings to assess ecological validity for occupational safety applications. A multiple case study examined two passive BSEs: HAPO (rigid, spring-based) and BISKO (soft, elastic-based), testing 23 laboratory and 15 field masons performing masonry tasks using psychophysical assessments. HAPO demonstrated superior laboratory performance (median overall score: 1.5) but significant field deterioration (median: 3.0, p < 0.001), with physical effort ratings increasing 200% (median: 1.0 to 3.0) and movement restriction ratings doubling (median: 1.0 to 3.0). BISKO maintained stable performance across settings (median overall scores: laboratory 2.25, field 1.875, p = 0.217). Worker willingness to continue using HAPO declined sharply from laboratory (median: 1.0) to field (median: 4.0), suggesting potential non-adoption and continued injury risk. Laboratory testing inadequately predicts field safety performance. These findings necessitate field-validated protocols for exoskeleton safety assessment and highlight design importance for sustained injury prevention. Successful implementation requires prioritizing extended-wear comfort and movement flexibility over maximum support to ensure worker acceptance and sustained protective benefit.",
     "photos": [
       {
         "video": "assets/videos/exo-lab-testing.mp4",
@@ -113,7 +113,7 @@ const PUBLICATIONS = [
     "id": "ijcm2026",
     "type": "journal",
     "year": 2026,
-    "title": "Cross-cultural analysis of movement patterns and work-related musculoskeletal disorders in Danish and Kuwaiti construction",
+    "title": "Cross-cultural analysis of movement patterns and work-related musculoskeletal disorders in Danish and Kuwaiti construction: implications for targeted exoskeleton design",
     "authors": "Al-Khiami, M. I., Lindhard, S. M., & Wandahl, S.",
     "venue": "International Journal of Construction Management",
     "doi": "10.1080/15623599.2025.2566892",
@@ -122,7 +122,7 @@ const PUBLICATIONS = [
       "Ergonomics",
       "Construction"
     ],
-    "abstract": ""
+    "abstract": "Cross-cultural differences in work-related musculoskeletal disorders (WMSDs) and movement patterns remain understudied despite their importance for developing targeted ergonomic interventions. This study quantifies and compares WMSD prevalence and movement pattern frequencies between construction workers in Kuwait and Denmark to inform culturally appropriate exoskeleton design. Using the Nordic Musculoskeletal Questionnaire (NMQ) and a custom Movement Pattern Frequency (MPF) survey assessing overhead work, prolonged standing, lifting, and other key activities, data were collected from 117 Kuwaiti and 47 Danish workers. Results revealed counterintuitive findings: Denmark showed higher WMSD prevalence across all body parts (66% vs 34.2% lower back pain), suggesting potential underreporting in Kuwait due to cultural and employment factors. Significant differences emerged in four movement patterns, with Kuwait workers reporting higher frequencies of overhead work and prolonged standing. Movement patterns correlated moderately with WMSDs in Denmark (ρ = 0.460, p < 0.001) but showed negligible correlation in Kuwait (ρ = −0.035), indicating cultural influences on health reporting behaviors. The results directly inform exoskeleton design and deployment strategies, with Denmark showing readiness for exoskeleton implementation targeting integrated movement patterns while Kuwait requires preliminary cultural and organizational interventions. This research provides practical guidance for developing culturally sensitive exoskeleton interventions in construction."
   },
   {
     "id": "ijred2026",
@@ -179,7 +179,7 @@ const PUBLICATIONS = [
       "Construction",
       "Ergonomics"
     ],
-    "abstract": ""
+    "abstract": "Work-related musculoskeletal disorders (WMSDs) are a significant health issue among construction workers, with prevalence influenced by factors such as personal demographics, exposure to work risk factors, and working conditions. This study addresses a research gap by comparing WMSD prevalence between Kuwait and Denmark; two countries with contrasting working conditions. Data were collected from 117 workers in Kuwait and 47 in Denmark using the Nordic Musculoskeletal Questionnaire (NMQ). Results showed that 78.72% of Danish workers reported discomfort in at least one body part compared to 52.14% in Kuwait, despite Denmark’s comparatively better working conditions. Additionally, absenteeism due to WMSDs was higher in Denmark (29.79%) than in Kuwait (9.40%). This paradoxical finding led to further analysis using logistic regression that indicated country was a significant predictor of WMSD reporting (OR=3.38, p<0.05), with Danish workers being substantially more likely to report WMSDs than their Kuwaiti counterparts. This suggested potential underreporting in Kuwait, prompting an investigation into organizational, economic, and cultural factors that may influence reporting behaviors. Specifically, Kuwait’s high power distance and uncertainty avoidance may contribute to miscommunication and underreporting, while Denmark’s individualistic culture encourages transparency. This study makes two primary contributions to the construction engineering and management body of knowledge by: (1) providing the first cross cultural analysis of WMSD prevalence between Gulf Cooperation Council and Nordic construction sectors, and (2) demonstrating that country factors—likely cultural in nature—are stronger predictors of WMSD reporting than individual worker personal demographics. For Kuwait, this implies a need for improved reporting systems, greater worker empowerment, and enhanced working conditions, while Denmark would benefit from a focus on strengthening preventive measures. Future research should further explore the role of cultural influences on WMSD reporting. This study underscores the importance of culturally informed approaches in developing effective workplace health and safety strategies."
   },
   {
     "id": "work2025",
@@ -381,7 +381,7 @@ const PUBLICATIONS = [
       "Virtual Reality",
       "Education"
     ],
-    "abstract": ""
+    "abstract": "Traditional engineering education often struggles to effectively teach practical construction inspection skills through conventional 2D drawings. This study investigates the effectiveness of different visualization methods—traditional 2D plans, Desktop-Based Virtual Reality (DB-VR), and Head-Mounted Display Virtual Reality (HMD-VR)—in helping civil engineering students identify construction mistakes in concrete structures. Sixty-nine second-year undergraduate students were randomly assigned to three groups and tasked with identifying twelve predetermined structural mistakes using their assigned visualization method. Performance metrics (accuracy, and completion time), system usability, and prior experience were evaluated. Results showed that both VR methods significantly outperformed traditional approaches in accuracy (57.5% vs 24.2% identification rate) and efficiency (7.56–11.13 vs 15 minutes). HMD-VR users demonstrated the lowest wrongly identified mistakes (mean = 1.91 vs 3.17 and 3.00) and fastest completion times. Both VR methods achieved “Good” usability ratings, significantly higher than traditional methods. Notably, performance and usability were not correlated with prior experience, suggesting broad applicability across different user groups. The findings support the integration of VR technologies, particularly HMD-VR, into engineering education as an effective tool for developing practical inspection skills in a risk-free environment."
   },
   {
     "id": "ismc2024",

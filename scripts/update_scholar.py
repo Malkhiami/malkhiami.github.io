@@ -39,11 +39,19 @@ def main() -> int:
     counts = [int(c) for c in re.findall(r'class="gsc_g_al"[^>]*>(\d+)</span>', html)]
     per_year = dict(zip(years, counts)) if years and len(years) == len(counts) else {}
 
+    # preserve the manually-maintained ResearchGate reads count, if present
+    rg_reads = None
+    if OUT.exists():
+        m = re.search(r'"rgReads":\s*(\d+)', OUT.read_text(encoding="utf-8"))
+        if m:
+            rg_reads = int(m.group(1))
+
     stats = {
         "updated": datetime.date.today().isoformat(),
         "citations": citations,
         "hIndex": h_index,
         "i10Index": i10,
+        "rgReads": rg_reads,
         "perYear": per_year,
     }
     OUT.write_text(

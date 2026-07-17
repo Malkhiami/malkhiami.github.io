@@ -351,6 +351,13 @@ section { padding: 5.5rem 0; position: relative; }
 .edu-card h3 { font-size: 1.05rem; color: var(--ink-strong); margin: 0.3rem 0 0.2rem; line-height: 1.4; }
 .edu-org { font-size: 0.85rem; color: var(--muted); font-style: italic; margin-bottom: 0.55rem; }
 .edu-card p { font-size: 0.85rem; color: var(--muted); }
+.edu-link { margin-top: 0.6rem !important; font-size: 0.8rem !important; }
+.edu-link a { font-weight: 600; }
+.review-note {
+  margin-top: 1.6rem; font-size: 0.88rem; color: var(--muted);
+  border-left: 2px solid var(--line); padding-left: 1rem; max-width: 720px;
+}
+.review-note em { color: var(--ink); }
 
 /* ---------- Background: appointment org cards ---------- */
 .org-card {
