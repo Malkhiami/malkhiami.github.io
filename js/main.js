@@ -118,10 +118,7 @@ const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)
     "stat-hindex": s ? s.hIndex : 0,
     "stat-i10": s ? s.i10Index : 0,
     "stat-pubs": pubCount,
-    "stat-rgreads": s && s.rgReads ? s.rgReads : 0,
   };
-  const rgRow = document.getElementById("rg-row");
-  if (rgRow && s && s.rgReads) rgRow.style.display = "";
   document.querySelectorAll("[data-stat]").forEach((el) => {
     const key = el.dataset.stat;
     if (key in values) el.dataset.count = values[key];
