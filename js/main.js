@@ -63,14 +63,51 @@ const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)
     }));
   }
 
+  // cursor interaction: particles link to and drift away from the pointer
+  const mouse = { x: -1e9, y: -1e9 };
+  const hero = document.querySelector(".hero");
+  if (hero) {
+    hero.addEventListener("pointermove", (e) => {
+      const r = canvas.getBoundingClientRect();
+      mouse.x = (e.clientX - r.left) * devicePixelRatio;
+      mouse.y = (e.clientY - r.top) * devicePixelRatio;
+    });
+    hero.addEventListener("pointerleave", () => { mouse.x = -1e9; mouse.y = -1e9; });
+  }
+
   function step() {
     ctx.clearRect(0, 0, w, h);
     const col = accent();
     const linkDist = 130 * devicePixelRatio;
+    const mouseDist = 170 * devicePixelRatio;
+    const vMax = 0.9 * devicePixelRatio;
     for (const p of particles) {
+      const dx = p.x - mouse.x, dy = p.y - mouse.y;
+      const md = Math.hypot(dx, dy);
+      if (md < mouseDist && md > 1) {
+        const f = ((mouseDist - md) / mouseDist) * 0.045 * devicePixelRatio;
+        p.vx += (dx / md) * f;
+        p.vy += (dy / md) * f;
+      }
+      p.vx = Math.max(-vMax, Math.min(vMax, p.vx * 0.995));
+      p.vy = Math.max(-vMax, Math.min(vMax, p.vy * 0.995));
       p.x += p.vx; p.y += p.vy;
       if (p.x < 0 || p.x > w) p.vx *= -1;
       if (p.y < 0 || p.y > h) p.vy *= -1;
+    }
+    // threads from the cursor to nearby nodes
+    if (mouse.x > -1e8) {
+      for (const p of particles) {
+        const d = Math.hypot(p.x - mouse.x, p.y - mouse.y);
+        if (d < mouseDist) {
+          ctx.strokeStyle = col.node + (0.35 * (1 - d / mouseDist)).toFixed(3) + ")";
+          ctx.lineWidth = devicePixelRatio * 0.8;
+          ctx.beginPath();
+          ctx.moveTo(mouse.x, mouse.y);
+          ctx.lineTo(p.x, p.y);
+          ctx.stroke();
+        }
+      }
     }
     for (let i = 0; i < particles.length; i++) {
       for (let j = i + 1; j < particles.length; j++) {
@@ -97,6 +134,16 @@ const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)
 
   resize();
   window.addEventListener("resize", resize);
+  // guard: if the tab had no layout at load time, retry sizing until it does
+  let frameCount = 0;
+  const origStep = step;
+  step = function () {
+    if ((++frameCount % 90 === 0 || w === 0) && canvas.offsetWidth &&
+        Math.abs(canvas.offsetWidth * devicePixelRatio - w) > 2) {
+      resize();
+    }
+    origStep();
+  };
   requestAnimationFrame(step);
 })();
 

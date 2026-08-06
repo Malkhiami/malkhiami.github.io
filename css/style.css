@@ -876,6 +876,70 @@ footer {
   .pub-item, .grant-card, .org-card, .edu-card, .r-card { break-inside: avoid; border: 1px solid #ddd; }
 }
 
+/* ==========================================================================
+   Animation layer (paired with js/effects.js — delete both to remove)
+   ========================================================================== */
+
+/* hero entrance sequence */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); filter: blur(5px); }
+  to { opacity: 1; transform: none; filter: none; }
+}
+.hero-kicker { animation: fadeUp 0.7s 0.1s cubic-bezier(0.2, 0.7, 0.3, 1) both; }
+.hero-sub { animation: fadeUp 0.7s 0.9s cubic-bezier(0.2, 0.7, 0.3, 1) both; }
+.hero-affil { animation: fadeUp 0.7s 1.05s cubic-bezier(0.2, 0.7, 0.3, 1) both; }
+.hero-cta { animation: fadeUp 0.7s 1.2s cubic-bezier(0.2, 0.7, 0.3, 1) both; }
+.hero-stats { animation: fadeUp 0.8s 1.4s cubic-bezier(0.2, 0.7, 0.3, 1) both; }
+
+/* split-text name reveal */
+.hero h1.split-ready .char {
+  display: inline-block;
+  animation: charRise 0.65s cubic-bezier(0.2, 0.7, 0.3, 1) both;
+  animation-delay: calc(0.25s + var(--i) * 0.045s);
+}
+@keyframes charRise {
+  from { opacity: 0; transform: translateY(0.55em) rotate(7deg); filter: blur(6px); }
+  to { opacity: 1; transform: none; filter: none; }
+}
+
+/* richer scroll reveals: blur-to-sharp */
+.reveal { filter: blur(5px); }
+.reveal.visible { filter: none; }
+
+/* 3D tilt (class added on first hover so scroll reveals stay intact) */
+.tilt-card {
+  transform: perspective(900px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)) !important;
+  transition: transform 0.18s ease-out, border-color 0.25s, box-shadow 0.25s !important;
+  will-change: transform;
+}
+.tilt-card:hover { box-shadow: var(--shadow); }
+
+/* cursor spotlight */
+.spot { position: relative; }
+.spot::after {
+  content: ""; position: absolute; inset: 0; border-radius: inherit;
+  pointer-events: none; opacity: 0; transition: opacity 0.35s ease; z-index: 1;
+  background: radial-gradient(480px circle at var(--mx, 50%) var(--my, 50%),
+    color-mix(in srgb, var(--accent-2) 12%, transparent), transparent 65%);
+}
+.spot:hover::after { opacity: 1; }
+
+/* magnetic buttons */
+.btn, .filter-btn, .social-link {
+  transform: translate(var(--magx, 0px), var(--magy, 0px));
+  transition: transform 0.18s ease-out, box-shadow 0.2s, background 0.2s,
+    border-color 0.2s, color 0.2s;
+}
+.btn:hover { transform: translate(var(--magx, 0px), calc(var(--magy, 0px) - 2px)); }
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-kicker, .hero-sub, .hero-affil, .hero-cta, .hero-stats,
+  .hero h1.split-ready .char { animation: none; }
+  .reveal { filter: none; }
+  .tilt-card { transform: none !important; }
+  .btn, .filter-btn, .social-link { transform: none; }
+}
+
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
   .about-grid, .impact-grid, .teach-grid, .timeline-cols { grid-template-columns: 1fr; }
