@@ -618,5 +618,20 @@ const PUBLICATIONS = [
       "Energy"
     ],
     "abstract": "The development of low energy buildings in hot subtropical and desert like climates such as Australia and Kuwait, requires strategies that are rather challenging. Five (5) experimental rooms are going to be built to assess these energy saving techniques for a research program jointly between Kuwait and Australia. Before the construction phase, these rooms are simulated in TRNSYS18 for the two sites based on available weather data collected from Kuwait International Airport and Rockhampton Airport. The objectives are to investigate room orientation and walling materials on energy performance of the rooms. It was found that all rooms return identical temperature profiles in each of the eight (8) dominant directions, i.e., N, NE, E, SE, S, SE, E, and NW. Five (5) different commercially available wall materials were employed for the five (5) simulated rooms in Kuwait and Australia. It was found that autoclaved aerated concrete (AAC) wall materials and north (N) building face orientation are the preferred construction material and orientation in both sites. The energy performance index (EPI) showed that AAC wall materials for the room faced towards north (N) provides the lowest cooling EPI of 646 and 448.4 kW/m 2 /year in Kuwait and Rockhampton, Australia, respectively."
+  },
+  {
+    "id": "cdio2026",
+    "type": "conference",
+    "year": 2026,
+    "title": "Strengthening Engineering Education through Industrial Collaborations within the CDIO Framework",
+    "authors": "Alsaba, M. T., Al-Khiami, M. I., El Achkar, J. H., & Abdul-Niby, M.",
+    "venue": "22nd International CDIO Conference",
+    "doi": "",
+    "url": "https://www.researchgate.net/publication/410696481_STRENGTHENING_ENGINEERING_EDUCATION_THROUGH_INDUSTRIAL_COLLABORATIONS_WITHIN_THE_CDIO_FRAMEWORK",
+    "tags": [
+      "Education",
+      "Industry Collaboration"
+    ],
+    "abstract": ""
   }
 ];
