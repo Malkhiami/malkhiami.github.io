@@ -129,7 +129,7 @@ const PUBLICATIONS = [
     "type": "journal",
     "year": 2026,
     "title": "Experimental investigation of a wildlife-safe origami-inspired reaction-type wind turbine for sustainable urban energy systems",
-    "authors": "Sedaghat, A., Al-Khiami, M. I., et al.",
+    "authors": "Sedaghat, A., Farhat, M. H., Djedi, B., Al-Khiami, M. I., & El Badawy, M.",
     "venue": "International Journal of Renewable Energy Development",
     "doi": "10.61435/ijred.2026.62526",
     "tags": [
@@ -143,7 +143,7 @@ const PUBLICATIONS = [
     "type": "journal",
     "year": 2026,
     "title": "Origami-inspired urban wind turbines: Scalable bladeless designs for decentralized renewable energy",
-    "authors": "Sedaghat, A., Al-Khiami, M. I., et al.",
+    "authors": "Farhat, M. H., Mehdizadeh, A., Sedaghat, A., El Badawy, M., Djedi, B., Al-Khiami, M. I., Mostafaeipour, A., & Nazififard, M.",
     "venue": "Green Technologies and Sustainability",
     "doi": "10.1016/j.grets.2025.100253",
     "tags": [
@@ -157,7 +157,7 @@ const PUBLICATIONS = [
     "type": "journal",
     "year": 2025,
     "title": "A novel origami inspired single rotor horizontal axis wind turbine",
-    "authors": "Sedaghat, A., Al-Khiami, M. I., et al.",
+    "authors": "Sedaghat, A., Djedi, B., Farhat, M. H., Al-Khiami, M. I., & El Badawy, M.",
     "venue": "Journal of Energy Systems",
     "doi": "10.30521/jes.1723925",
     "tags": [
@@ -244,7 +244,7 @@ const PUBLICATIONS = [
     "type": "journal",
     "year": 2024,
     "title": "Integrating solar PV systems for energy efficiency in portable cabins: A case study in Kuwait",
-    "authors": "Sedaghat, A., Kalbasi, R., Narayanan, R., et al., incl. Al-Khiami, M. I.",
+    "authors": "Sedaghat, A., Kalbasi, R., Narayanan, R., Mehdizadeh, A., Soleimani, S. M., Malayer, M. A., Al-Khiami, M. I., Salem, H., Hussam, W. K., Sabati, M., Rasul, M., & Khan, M. M. K.",
     "venue": "Solar Energy, 277, 112715",
     "doi": "10.1016/j.solener.2024.112715",
     "tags": [
@@ -258,7 +258,7 @@ const PUBLICATIONS = [
     "type": "journal",
     "year": 2024,
     "title": "Case studies on energy performance of walling materials in various regions",
-    "authors": "Sedaghat, A., Soleimani, S. M., Al-Khiami, M. I., et al.",
+    "authors": "Sedaghat, A., Soleimani, S. M., Al-Khiami, M. I., Sabati, M., Hussam, W. K., Salem, H. J., Rasul, M., Narayanan, R., Khan, M. M. K., Malayer, M. A., & Mehdizadeh, A.",
     "venue": "International Journal of Environmental Science and Technology, 21(12), 7941–7968",
     "doi": "10.1007/s13762-024-05518-7",
     "tags": [
@@ -335,7 +335,7 @@ const PUBLICATIONS = [
     "type": "journal",
     "year": 2023,
     "title": "Exploring energy-efficient building solutions in hot regions: A study on bio-phase change materials and cool roof coatings",
-    "authors": "Sedaghat, A., Salem, H., Hussam, W. K., et al., incl. Al-Khiami, M. I.",
+    "authors": "Sedaghat, A., Salem, H., Hussam, W. K., Mahdizadeh, A., Al-Khiami, M. I., Malayer, M. A., Soleimani, S. M., Sabati, M., Narayanan, R., Rasul, M., & Khan, M. M. K.",
     "venue": "Journal of Building Engineering, 76, 107258",
     "doi": "10.1016/j.jobe.2023.107258",
     "tags": [
@@ -531,7 +531,7 @@ const PUBLICATIONS = [
     "type": "chapter",
     "year": 2025,
     "title": "Impact of Phase Change Materials on Temperature Regulation in Passive Cooling Systems",
-    "authors": "Sedaghat, A., et al., incl. Al-Khiami, M. I.",
+    "authors": "Al-Khiami, M. I., Soleimani, S. M., Sedaghat, A., & Malayer, M. A.",
     "venue": "Springer Nature Switzerland",
     "doi": "10.1007/978-3-031-92417-0_5",
     "tags": [
