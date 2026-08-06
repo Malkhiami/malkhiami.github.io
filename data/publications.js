@@ -251,7 +251,7 @@ const PUBLICATIONS = [
       "Sustainability",
       "Energy"
     ],
-    "abstract": ""
+    "abstract": "The rapid growth of energy consumption in densely populated urban areas with limited land space, especially in hot climates, poses significant challenges. The Australian University of Kuwait conducted a study using two portable cabins to explore energy-saving techniques. One cabin integrated an off-grid solar photovoltaic (PV) system to evaluate its impact on grid electricity demands for an airconditioning (AC) cooling system over 9 months, compared to the second cabin without a PV system. The PV system utilized rooftop space with four Monofacial Go Green 350 W/24 V solar panels, an off-grid maximum power point tracker (MPPT) inverter charger 3.5kVA/100A/24 V, and two Gel deep cycle batteries 12 V/200Ah. The PV panels were oriented south at a 30-degree latitude angle, providing power through the MPPT to a 1.5-ton AC split unit for cooling. Findings showed that the cabin with solar PV panels achieved a 24.1 % energy saving and a total CO2 reduction of 129.4 kg, consuming 1,743 kWh over 237 days, compared to 2,296 kWh for the cabin without the PV system. The novelty of this study lies in the integration of off-grid solar PV systems with existing cooling technologies to evaluate potential energy savings and environmental benefits for comprehensive utilization and addressing urban and climate challenges. Enhancements can include flexible room temperature control using advanced systems, optimizing the PV system settings with more efficient AC systems, and connecting the PV system to additional loads like heating/cooling and lighting. These improvements would ensure the comprehensive utilization of captured solar energy in Kuwait and countries with similar climatic conditions throughout the year. Advancements in solar PV panel efficiency and high-intensity flexible PV panels offer opportunities for maximizing solar energy capture in dense residential buildings."
   },
   {
     "id": "ijest2024",
@@ -265,7 +265,7 @@ const PUBLICATIONS = [
       "Sustainability",
       "Energy"
     ],
-    "abstract": ""
+    "abstract": "The energy consumption of buildings, particularly for space heating and cooling, is a major global concern. It accounts for a substantial portion of household energy use and varies based on environmental factors and climate conditions. Environmental factors highly influence energy-saving strategies of buildings in different climate areas. Addressing this challenge necessitates innovative approaches to building design and materials. This study aims to explore the energy performance of different walling materials in varying climates, including desert, subtropical, and tropical regions. Using transient systems simulation program multi-zone software, simulations were conducted on five room models with ten different walling materials. Notably, autoclaved aerated concrete and cellular lightweight concrete consistently demonstrated better performance in both Kuwait and Australia, resulting in reduced cooling and heating demands. The study emphasizes the significance of selecting building materials based on local climate conditions. It highlights the potential for future exploration of advanced materials like phase change materials and cool roofs. By considering local climate conditions, energy-efficient buildings can be constructed. Future research should focus on advanced materials to further enhance energy efficiency."
   },
   {
     "id": "sustainability2023",
@@ -342,7 +342,7 @@ const PUBLICATIONS = [
       "Sustainability",
       "Energy"
     ],
-    "abstract": ""
+    "abstract": "Creating low-energy buildings in arid, hot desert climates like Kuwait poses significant challenges. This research examines the potential of Bio-PCMs and cool roof coatings as energy-saving methods in three hot climate locations, using both experimental and computational approaches. Two identical portable cabins were meticulously constructed, and their thermal properties were analysed under two different cooling conditions. These cabins offer a unique testing ground for various energy-saving techniques, as their thermal similarity has been experimentally confirmed. A six-zone model was developed in TRNSYS software to study Bio-PCM integrated walls. The findings for the desert climate of Kuwait and subtropical climate of Rockhampton, Australia, demonstrated the best performance with autoclaved aerated concrete block walls, achieving energy performance indices of 761.7 and 496.3 kWh/m2/year, respectively. Bio-PCMs integration in three positions within walls and roof were examined, which were yielded energy savings of 22%, 23%, and 53% in Kuwait, Australia, and India, respectively, while experimental results on two cool roof methods, cool roof paint and aluminium foil roof, indicated that energy savings proved to be negligible. Incorporating insulation materials via sandwich panels in buildings can substantially enhance energy efficiency in Kuwait and Australia, with observed reductions of 35.7% and 43.8% compared to autoclaved aerated concrete blocks from simulation results. However, in tropical climate of Kodaikanal, India, energy consumption were increased dramatically by 126.2% when sandwich panels were used. This study offers valuable insights into optimal wall materials and energy-saving strategies, such as cool roof methods, insulation and Bio-PCM, for use in various hot climates."
   },
   {
     "id": "cib2025",
@@ -449,7 +449,7 @@ const PUBLICATIONS = [
     "title": "A Gamified Approach to Concrete Structure's Interpretation using Virtual Reality: A Study of Performance and Simulation Sickness",
     "authors": "Al-Khiami, M. I., Jaeger, M., & Soleimani, S. M.",
     "venue": "2023 IEEE Global Engineering Education Conference (EDUCON)",
-    "doi": "10.1109/EDUCON54358.2023.10125229",
+    "doi": "10.1109/EDUCON54358.2023.10125180",
     "photos": [
       {
         "src": "assets/images/gallery/conf-educon-1.jpg",
@@ -465,7 +465,7 @@ const PUBLICATIONS = [
       "Education",
       "Gamification"
     ],
-    "abstract": ""
+    "abstract": "Innovation in the methods and strategies of teaching has become of high importance to educational institutions. Shifting teaching strategies from static to immersive, interactive, and engaging environments through gamification approaches is paving its way into education with substantial benefits. The integration of disruptive technologies such as Virtual Reality (VR) as a tool to gamify teaching has shown improved performance and motivation of students. Though, the use of such technologies appears to adversely affect the student's wellbeing resulting in simulation sickness. Civil engineering undergraduate students were divided into three groups and asked to interpret and identify structural mistakes in a concrete building using three different approaches: The static traditional 2-Dimensional Plans (2D), a gamified 3-Dimensional model (3D) and an immersive Virtual Reality (VR) environment. The students' performance and simulation sickness development were measured using three main simulation sickness categories. Results revealed that students using VR performed 35% and 4% better than 2D and 3D respectively. In addition, the data collected shows no correlation between traditional and gamified methods with regard to simulation sickness."
   },
   {
     "id": "proceedings2023",
@@ -480,7 +480,7 @@ const PUBLICATIONS = [
       "Construction",
       "Education"
     ],
-    "abstract": ""
+    "abstract": "The laggard integration of digital technologies in the construction industry has seen to delay the sector in realizing its potential advantages. Using Virtual reality (VR) in the construction has the capacity to augment the interpretation of structural drawings. Comparing VR using head mounted display (HMD) devices with traditional 2D drawings in identifying structural mistakes in construction drawings has been conducted with engineering students enrolled in a concrete structures course. The findings show that the HMD VR group was able to identify 40% more mistakes in comparison to the traditional group in addition to the increase in efficiency and speed of detection of five minutes. The use of VR within engineering education can potentially increase the pace of digital technology’s adaption in the construction sector."
   },
   {
     "id": "cats2023",
@@ -495,7 +495,7 @@ const PUBLICATIONS = [
       "Energy",
       "Data Science"
     ],
-    "abstract": ""
+    "abstract": "This research aims to enhance the comprehension of choosing efficient phase-change materials (PCMs) for energy conservation in buildings and addresses the gap in the literature concerning methodologies specific to Kuwait's context. A range of PCM materials, such as solid-state paraffin and liquid-state salt hydrates, have been developed. Eutectic mixtures, organic and inorganic PCMs, as well as bio-based PCMs, are gaining increasing popularity. Nonetheless, the transportation of liquid PCMs in Kuwait is challenging and expensive. In contrast, Graphite-based PCMs, which are in a solid state, provide a feasible transportation solution. This study aims to address the choice of melting point PCMs for buildings and practical considerations related to nano-graphite-based PCMs. Currently, there is a lack of a methodological approach in the literature for selecting the most effective PCM for buildings in Kuwait. To investigate this, two identical portable cabins were constructed in Kuwait, using 75mm sandwich panels with interior dimensions of 2m × 2m × 2.8m. Each room used a split unit air conditioner, with the temperature set at 22°C during measurements. A data logging system with SD memory storage collected temperatures from the interior sides of the cabin walls every 10 minutes between June 27th and July 2nd, 2023. The frequency distribution of wall temperatures from 20°C to 29°C was analyzed. From the results, a PCM with a melting point of 24°C would take approximately 8 hours to melt and have 16 hours available for solidification, considering a 24-hour day/night cycle. The next question to be addressed is determining the appropriate thickness of PCM to be used in Kuwait."
   },
   {
     "id": "icmame2023",
@@ -524,7 +524,7 @@ const PUBLICATIONS = [
       "Energy",
       "Sustainability"
     ],
-    "abstract": ""
+    "abstract": "Two portable cabins (size 2 m width, 2 m depth, 2.8 m height) were constructed using 75 mm Polyurethane sandwich panels (insulation walls) to simulate low energy buildings in Kuwait. Experimental measurements were conducted using eight K-type thermocouple probes on interior/exterior surfaces of the cabins’ walls to dynamically evaluate overall heat transfer coefficient during the hot months of August and September 2023 using IoT data storage. The collected data was further curated to ensure quality by treating negative values, handling potential division by zero issues, and filtering out large numbers. The dynamic average overall heat transfer coefficients were found to be 0.186, 0.198, 0.203, and 0.206 W/m2K for the East, North, West, and South facing walls, respectively. This is far better than the static (steady state) overall heat transfer coefficient of 0.2534 W/m2K, indicating that the dynamic behavior of the insulation walls is very promising, particularly by saving 21.76% cooling energy demands in summertime in Kuwait."
   },
   {
     "id": "pcmchapter2025",
@@ -538,13 +538,13 @@ const PUBLICATIONS = [
       "Sustainability",
       "Energy"
     ],
-    "abstract": ""
+    "abstract": "Economic and population growth in developing countries, combined with local and global warming, are primary factors in exacerbating the cooling demands by the population. Currently, energy consumption from buildings account for 36% of global energy demand and a staggering 90% in Kuwait. Electricity demand is expected to continue to rise and becomes problematic in countries that are highly dependent on the oil and gas industry for energy production. This ongoing situation underscores the importance of implementing sustainable solutions, such as, passive cooling with phase change materials (PCMs), to improve indoor climates and reduce energy consumption. This study aims to contribute to the field by experimentally utilizing and analyzing the impact of commercially available PCMs on indoor passive cooling. Two identical 75-mm sandwich panel cabins were constructed in Kuwait —one serving as a control and the other as an experimental cabin. Both cabins were equipped with sensors to measure the indoor temperature and a weather station to monitor outdoor temperature. PCM was added incrementally over several weeks. Results demonstrated that the use of PCM significantly reduced indoor temperature fluctuations and peak temperatures in the experimental cabin compared to the control cabin. Applying PCM to all four walls reduced the maximum temperature by 4.25 °C. The findings indicate that PCM can effectively moderate indoor temperatures, maintaining a more stable and comfortable indoor climate without the need for mechanical cooling systems. This study highlights the potential of PCM as a sustainable solution for reducing energy consumption in hot climates, particularly in regions heavily reliant on air conditioning."
   },
   {
     "id": "solarchapter2024",
     "type": "chapter",
     "year": 2024,
-    "title": "Harnessing Solar Energy for Efficient Cooling in Hot Weather Regions",
+    "title": "Harnessing Solar Energy for Efficient Cooling in Hot Weather Regions: A Comparative Experiment on Solar-Assisted Air Conditioning’s Energy Efficiency",
     "authors": "Soleimani, S. M., Al-Khiami, M. I., Sedaghat, A., & Malayer, M. A.",
     "venue": "Future Directions in Energy Engineering (pp. 69–77), Springer Nature Switzerland",
     "doi": "10.1007/978-3-031-62042-3_8",
@@ -552,7 +552,7 @@ const PUBLICATIONS = [
       "Sustainability",
       "Energy"
     ],
-    "abstract": ""
+    "abstract": "As countries continue to develop their industries while failing to acknowledge climate change and the intensifying concerns of global warming, energy consumption through fossil fuels will only increase. Hot countries in the Middle East, specifically Kuwait, have seen a trend of increasing overall temperatures for the past decades. The results of this increase have caused a stressful energy consumption from air conditioners (AC) as a need for a comfortable indoor climate. Conventional AC units can be substituted or supported with solar energy as an attempt to decrease energy consumption. The research compared conventional and solar assisted air conditioning energy consumption in two identical novel portable cabins while maintaining an indoor temperature of 22 °C. The results have shown an energy saving of 28%, 31%, 24%, and 18% by an integrated solar PV panels and batteries during the last 5 days of April and the first 3 weeks of May, respectively. The investigation provides great insights for manufacturers to consider solar energy as a source of electrical power of AC."
   },
   {
     "id": "chatgpt2023",
