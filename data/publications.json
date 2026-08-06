@@ -547,7 +547,7 @@
       "title": "Harnessing Solar Energy for Efficient Cooling in Hot Weather Regions",
       "authors": "Soleimani, S. M., Al-Khiami, M. I., Sedaghat, A., & Malayer, M. A.",
       "venue": "Future Directions in Energy Engineering (pp. 69–77), Springer Nature Switzerland",
-      "doi": "10.1007/978-3-031-66609-4_5",
+      "doi": "10.1007/978-3-031-62042-3_8",
       "tags": [
         "Sustainability",
         "Energy"
@@ -583,6 +583,41 @@
         "Construction Management"
       ],
       "abstract": ""
+    },
+    {
+      "id": "jcem2026onsite",
+      "type": "journal",
+      "year": 2026,
+      "title": "On-Site Evaluation of Back-Support Exoskeleton Effectiveness in Construction: A Multiple Case Study of Physical Performance, Ergonomic Comfort, and User Acceptance among Masonry Workers",
+      "authors": "Al-Khiami, M. I., & Lindhard, S. M.",
+      "venue": "Journal of Construction Engineering and Management",
+      "doi": "10.1061/jcemd4.coeng-17207",
+      "tags": [
+        "Exoskeletons",
+        "Ergonomics",
+        "Construction"
+      ],
+      "abstract": "Work-related musculoskeletal disorders (WMSD) remain a major concern in the construction industry, largely due to labor-intensive tasks characterized by repetitive lifting and awkward postures. Although various ergonomic interventions exist, high injury rates persist, underscoring a need for innovative solutions. Exoskeletons have emerged as a promising technology to reduce physical strain, yet empirical evidence of their effectiveness in real construction environments remains limited. This study employs an embedded multiple case study approach conducted over a period of four months across five construction sites with 15 masons to investigate the efficacy of two distinct back-support exoskeleton (BSE) designs. Through structured interviews, baseline and post exoskeleton data were collected over three days per mason, focusing on perceived exertion, fatigue, ergonomic comfort, and user acceptance. Results indicated substantial reduction in physical strain, including a 26.74% decrease in perceived exertion and a 42.11% reduction in fatigue. However, 93% of masons reported movement restrictions and all experienced strap-related discomfort, leading to a 57.41% decline in willingness to continue use despite proven physical benefits. This research contributes to the body of knowledge by demonstrating that exoskeleton implementation success in construction depends equally on biomechanical effectiveness and practical usability, revealing a critical gap between laboratory-proven benefits and field adoption that must be addressed through improved comfort design, realistic expectation management, and task-specific deployment strategies. These findings provide evidence-based guidance for manufacturers prioritizing design improvements and construction companies developing implementation strategies for exoskeleton technology in real work environments.",
+      "photos": [
+        {
+          "video": "assets/videos/exo-field-testing.mp4",
+          "poster": "assets/images/gallery/exo-field-testing-poster.jpg",
+          "caption": "On site: masons wearing back-support exoskeletons during the field evaluation behind this study"
+        }
+      ]
+    },
+    {
+      "id": "kem2023",
+      "type": "journal",
+      "year": 2023,
+      "title": "Development of a Novel Low-Energy Building: Effects of Room Orientation and Wall Materials",
+      "authors": "Sedaghat, A., Soleimani, S. M., Al-Khiami, M. I., Sabati, M., Rasul, M., Narayanan, R., & Khan, M. M. K.",
+      "venue": "Key Engineering Materials",
+      "doi": "10.4028/p-26jy0u",
+      "tags": [
+        "Energy"
+      ],
+      "abstract": "The development of low energy buildings in hot subtropical and desert like climates such as Australia and Kuwait, requires strategies that are rather challenging. Five (5) experimental rooms are going to be built to assess these energy saving techniques for a research program jointly between Kuwait and Australia. Before the construction phase, these rooms are simulated in TRNSYS18 for the two sites based on available weather data collected from Kuwait International Airport and Rockhampton Airport. The objectives are to investigate room orientation and walling materials on energy performance of the rooms. It was found that all rooms return identical temperature profiles in each of the eight (8) dominant directions, i.e., N, NE, E, SE, S, SE, E, and NW. Five (5) different commercially available wall materials were employed for the five (5) simulated rooms in Kuwait and Australia. It was found that autoclaved aerated concrete (AAC) wall materials and north (N) building face orientation are the preferred construction material and orientation in both sites. The energy performance index (EPI) showed that AAC wall materials for the room faced towards north (N) provides the lowest cooling EPI of 646 and 448.4 kW/m 2 /year in Kuwait and Rockhampton, Australia, respectively."
     }
   ]
 }

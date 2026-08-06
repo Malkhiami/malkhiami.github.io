@@ -22,10 +22,14 @@ jobs:
         run: python scripts/update_scholar.py
         continue-on-error: true   # a blocked request should not fail the workflow
 
+      - name: Sync new publications from ORCID
+        run: python scripts/sync_publications.py
+        continue-on-error: true
+
       - name: Commit if changed
         run: |
           git config user.name "scholar-bot"
           git config user.email "actions@github.com"
-          git add data/scholar.js
-          git diff --cached --quiet || git commit -m "chore: refresh Google Scholar stats"
+          git add data/scholar.js data/publications.json data/publications.js
+          git diff --cached --quiet || git commit -m "chore: refresh Scholar stats & sync publications"
           git push

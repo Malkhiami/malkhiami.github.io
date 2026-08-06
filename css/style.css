@@ -902,9 +902,7 @@ footer {
   to { opacity: 1; transform: none; filter: none; }
 }
 
-/* richer scroll reveals: blur-to-sharp */
-.reveal { filter: blur(5px); }
-.reveal.visible { filter: none; }
+/* scroll reveals stay filter-free — blur is too expensive during scrolling */
 
 /* 3D tilt (class added on first hover so scroll reveals stay intact) */
 .tilt-card {
@@ -938,6 +936,17 @@ footer {
   .reveal { filter: none; }
   .tilt-card { transform: none !important; }
   .btn, .filter-btn, .social-link { transform: none; }
+}
+
+/* ---------- Justified long-form prose (with hyphenation to avoid rivers) ---------- */
+.about-text p:not(.lede),
+.pub-abstract,
+.grant-card > p,
+.grant-card details p,
+.review-note {
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
 }
 
 /* ---------- Responsive ---------- */
