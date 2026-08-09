@@ -1,5 +1,4 @@
+# STEALTH MODE — blocks all search engines until public launch.
+# At launch, replace with:  User-agent: *  /  Allow: /  and the sitemap line.
 User-agent: *
-Allow: /
-
-# Update this line with the real URL after deployment:
-# Sitemap: https://YOUR-SITE-URL/sitemap.xml
+Disallow: /
