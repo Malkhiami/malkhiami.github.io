@@ -1,4 +1,5 @@
-# STEALTH MODE — blocks all search engines until public launch.
-# At launch, replace with:  User-agent: *  /  Allow: /  and the sitemap line.
 User-agent: *
-Disallow: /
+Allow: /
+
+# Sitemap URL is set at deploy time once the custom domain is live.
+Sitemap: https://PLACEHOLDER-DOMAIN/sitemap.xml
