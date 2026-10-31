@@ -3,6 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>
+    // Light theme by default; a visitor's saved toggle choice still wins.
+    try { document.documentElement.dataset.theme = localStorage.getItem("theme") || "light"; }
+    catch (e) { document.documentElement.dataset.theme = "light"; }
+  </script>
   <title>Mohamad Iyad Al-Khiami — Construction Management &amp; Building Informatics</title>
   <meta name="description" content="Mohamad Iyad Al-Khiami — Assistant Professor in Civil Engineering specializing in construction management, building informatics, exoskeletons, robotics, VR, and applied AI." />
   <meta name="author" content="Mohamad Iyad Al-Khiami" />
