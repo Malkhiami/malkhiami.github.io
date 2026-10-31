@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parent.parent
 JSON_PATH = ROOT / "data" / "publications.json"
 JS_PATH = ROOT / "data" / "publications.js"
 
-HEADERS = {"User-Agent": "AlKhiami-academic-site/1.0 (mailto:m.iyadalkh@gmail.com)"}
+HEADERS = {"User-Agent": "AlKhiami-academic-site/1.0 (mailto:contact@mialkhiami.com)"}
 
 
 def strip_jats(text: str) -> str:

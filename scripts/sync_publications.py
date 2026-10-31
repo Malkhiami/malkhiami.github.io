@@ -18,7 +18,7 @@ ROOT = Path(__file__).resolve().parent.parent
 PUBS_PATH = ROOT / "data" / "publications.json"
 JS_PATH = ROOT / "data" / "publications.js"
 
-HEADERS = {"User-Agent": "AlKhiami-academic-site/1.0 (mailto:m.iyadalkh@gmail.com)",
+HEADERS = {"User-Agent": "AlKhiami-academic-site/1.0 (mailto:contact@mialkhiami.com)",
            "Accept": "application/json"}
 
 TYPE_MAP = {
