@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# Sitemap URL is set at deploy time once the custom domain is live.
-Sitemap: https://PLACEHOLDER-DOMAIN/sitemap.xml
+Sitemap: https://mialkhiami.com/sitemap.xml

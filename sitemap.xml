@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Replace YOUR-SITE-URL with the real domain after deployment -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://YOUR-SITE-URL/</loc>
+    <loc>https://mialkhiami.com/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
