@@ -1,7 +1,7 @@
 // Live scholarly metrics — refreshed automatically by scripts/update_scholar.py
 // (run daily via GitHub Actions once the site is on GitHub Pages).
 const SCHOLAR_STATS = {
-  "updated": "2026-11-03",
+  "updated": "2026-11-04",
   "citations": 345,
   "hIndex": 10,
   "i10Index": 11,
