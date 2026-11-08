@@ -841,6 +841,25 @@
 
   <script data-goatcounter="https://miyadalkh.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 
+  <script>
+    // PostHog analytics (EU cloud). Cookie-free: persistence stays in memory,
+    // so no consent banner is needed. Skipped on local previews.
+    (function () {
+      if (/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) return;
+      var s = document.createElement("script");
+      s.src = "https://eu-assets.i.posthog.com/static/array.full.js";
+      s.defer = true;
+      s.onload = function () {
+        window.posthog.init("phc_wCZXKS5nnQ8FQde8WkDfnVB78YpbZATzGh87jauTPRoV", {
+          api_host: "https://eu.i.posthog.com",
+          defaults: "2025-05-24",
+          persistence: "memory",
+        });
+      };
+      document.head.appendChild(s);
+    })();
+  </script>
+
   <script src="data/worldmap.js?v=17"></script>
   <script src="data/scholar.js?v=17"></script>
   <script src="data/publications.js?v=22"></script>
