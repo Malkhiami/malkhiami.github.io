@@ -58,7 +58,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css?v=19" />
+  <link rel="stylesheet" href="css/style.css?v=20" />
 </head>
 <body>
 
@@ -77,6 +77,7 @@
         <li><a href="#publications">Publications</a></li>
         <li><a href="#teaching">Teaching</a></li>
         <li><a href="#supervision">Projects</a></li>
+        <li><a href="#tools">Tools</a></li>
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#sdg">SDGs</a></li>
         <li><a href="#collaborate">Collaborate</a></li>
@@ -104,6 +105,7 @@
       <div class="hero-cta">
         <a class="btn btn-primary" href="https://scholar.google.com/citations?user=vnjqdE4AAAAJ" target="_blank" rel="noopener">Google Scholar</a>
         <a class="btn btn-ghost" href="#collaborate">Work with me</a>
+        <a class="btn btn-ghost" href="#tools">Student tools</a>
       </div>
       <div class="hero-stats">
         <div class="stat stat-live"><span class="live-dot"></span>
@@ -600,7 +602,7 @@
             <div class="course">Revit Design</div>
             <div class="course">Civil Engineering Materials</div>
             <div class="course">Basic Construction</div>
-            <div class="course">Statics</div>
+            <a class="course course-link" href="https://statics.mialkhiami.com/">Statics <span class="course-tag">Playbook →</span></a>
             <div class="course">Strength of Materials</div>
             <div class="course">Engineering Skills</div>
             <div class="course">Project-Based Learning</div>
@@ -698,6 +700,50 @@
           <p>An immersive VR environment that trains construction laborers to spot site hazards safely.</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- ======= TOOLS ======= -->
+  <!-- Each new tool gets a card here; the Statics Playbook runs on its own address (Cloudflare). -->
+  <section id="tools" class="section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="kicker">Tools</div>
+        <h2>Free tools for engineering students</h2>
+        <p>Interactive learning tools I build for my students.</p>
+      </div>
+      <a class="tool-hero reveal" href="https://statics.mialkhiami.com/">
+        <div class="tool-hero-text">
+          <span class="feat-tag">Interactive · CIVL100 Statics</span>
+          <h3>Statics Playbook</h3>
+          <p>The interactive practice book for Statics: fourteen chapters, from force vectors and
+            moments to centroids, beams and trusses. Explore each idea hands-on, practise in Challenge
+            with instant feedback, and race the clock in Rush.</p>
+          <p><strong>CIVL100 students:</strong> sign in with your student ID and the PIN on your slip
+            to earn points, stars and a place on the weekly leaderboard. Anyone can explore as a guest.</p>
+          <span class="btn btn-primary">Open the Playbook →</span>
+        </div>
+        <div class="tool-hero-art" aria-hidden="true">
+          <svg viewBox="0 0 300 190">
+            <path d="M40 128 H260 M77 70 H223 M40 128 L77 70 L113 128 L150 70 L187 128 L223 70 L260 128"
+              fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+            <path d="M40 133 L28 153 L52 153 Z" fill="none" class="th-sup"/>
+            <path d="M260 133 L248 149 L272 149 Z" fill="none" class="th-sup"/>
+            <circle cx="253" cy="153.5" r="3.4" fill="none" class="th-sup"/>
+            <circle cx="267" cy="153.5" r="3.4" fill="none" class="th-sup"/>
+            <line x1="150" y1="16" x2="150" y2="56" class="th-load"/>
+            <path d="M144 54 L150 65 L156 54 Z" class="th-loadhead"/>
+            <circle cx="40" cy="128" r="4.2" class="th-joint"/>
+            <circle cx="113" cy="128" r="4.2" class="th-joint"/>
+            <circle cx="187" cy="128" r="4.2" class="th-joint"/>
+            <circle cx="260" cy="128" r="4.2" class="th-joint"/>
+            <circle cx="77" cy="70" r="4.2" class="th-joint"/>
+            <circle cx="150" cy="70" r="4.2" class="th-joint"/>
+            <circle cx="223" cy="70" r="4.2" class="th-joint"/>
+          </svg>
+        </div>
+      </a>
+      <p class="tool-more reveal">More tools for my courses are on the drawing board.</p>
     </div>
   </section>
 
@@ -865,6 +911,6 @@
   <script src="data/publications.js?v=22"></script>
   <script src="data/gallery.js?v=17"></script>
   <script src="js/main.js?v=18"></script>
-  <script src="js/effects.js?v=1"></script>
+  <script src="js/effects.js?v=2"></script>
 </body>
 </html>

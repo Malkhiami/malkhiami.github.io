@@ -17,16 +17,25 @@
     const splitNode = (node) => {
       if (node.nodeType === Node.TEXT_NODE) {
         const frag = document.createDocumentFragment();
-        for (const ch of node.textContent) {
-          if (ch === " ") {
+        // Letters sit in a no-wrap span per word, so a line can break only between words
+        // (otherwise a phone breaks the name inside a word, e.g. "Ba / ssam").
+        for (const part of node.textContent.split(/(\s+)/)) {
+          if (!part) continue;
+          if (/^\s+$/.test(part)) {
             frag.appendChild(document.createTextNode(" "));
             continue;
           }
-          const s = document.createElement("span");
-          s.className = "char";
-          s.style.setProperty("--i", charIndex++);
-          s.textContent = ch;
-          frag.appendChild(s);
+          const word = document.createElement("span");
+          word.className = "word";
+          word.style.whiteSpace = "nowrap";
+          for (const ch of part) {
+            const s = document.createElement("span");
+            s.className = "char";
+            s.style.setProperty("--i", charIndex++);
+            s.textContent = ch;
+            word.appendChild(s);
+          }
+          frag.appendChild(word);
         }
         node.replaceWith(frag);
       } else if (node.nodeType === Node.ELEMENT_NODE && node.tagName !== "BR") {

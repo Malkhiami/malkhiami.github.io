@@ -92,7 +92,8 @@ a:hover { text-decoration: underline; }
   color: var(--ink-strong); letter-spacing: 0.02em;
 }
 .nav-logo span { color: var(--accent); }
-.nav-links { display: flex; gap: 1.4rem; list-style: none; align-items: center; }
+.nav-links { display: flex; gap: 1.1rem; list-style: none; align-items: center; } /* 1.1rem keeps the logo on one line with 12 links */
+@media (max-width: 1250px) { .nav-links { gap: 0.8rem; } } /* narrower desktop windows; the menu below 1180px sets its own gap */
 .nav-links a {
   color: var(--muted); font-size: 0.86rem; font-weight: 500;
   letter-spacing: 0.03em; transition: color 0.2s;
@@ -108,6 +109,16 @@ a:hover { text-decoration: underline; }
 .nav-burger {
   display: none; background: none; border: none; color: var(--ink);
   font-size: 1.5rem; cursor: pointer;
+}
+/* Below 1180px the logo and twelve links no longer fit on one line, so the menu folds into the burger */
+@media (max-width: 1180px) {
+  .nav-links {
+    position: fixed; inset: 60px 0 auto 0; flex-direction: column;
+    background: var(--bg-2); padding: 1.4rem; border-bottom: 1px solid var(--line);
+    display: none; gap: 1rem;
+  }
+  .nav-links.open { display: flex; }
+  .nav-burger { display: block; }
 }
 
 /* ---------- Hero ---------- */
@@ -553,6 +564,13 @@ section { padding: 5.5rem 0; position: relative; }
 }
 .course:hover { border-color: var(--accent-2); transform: translateX(4px); }
 .course::before { content: "◆ "; color: var(--accent); font-size: 0.6rem; vertical-align: 2px; }
+/* A course tile that opens a tool (e.g. Statics -> Statics Playbook) */
+a.course { display: flex; align-items: center; gap: 0.2rem; }
+a.course:hover { text-decoration: none; color: var(--ink-strong); }
+.course-tag {
+  margin-left: auto; font-family: var(--font-mono); font-size: 0.66rem; letter-spacing: 0.06em;
+  color: var(--accent-2); white-space: nowrap;
+}
 
 /* ---------- Testimonials ---------- */
 .testimonial-strip { margin-top: 3rem; }
@@ -698,6 +716,7 @@ section { padding: 5.5rem 0; position: relative; }
 .th-loadhead { fill: var(--accent); }
 .th-moment { stroke: var(--accent); stroke-width: 2.2; }
 .th-momentfill { fill: color-mix(in srgb, var(--accent) 14%, transparent); }
+.th-joint { fill: var(--card-solid); stroke: currentColor; stroke-width: 2.2; }
 .tool-more { margin-top: 1.4rem; font-size: 0.84rem; color: var(--muted); font-style: italic; }
 @media (max-width: 800px) { .tool-hero { grid-template-columns: 1fr; } }
 
@@ -953,13 +972,7 @@ footer {
 @media (max-width: 900px) {
   .about-grid, .impact-grid, .teach-grid, .timeline-cols { grid-template-columns: 1fr; }
   .portrait-wrap { max-width: 300px; }
-  .nav-links {
-    position: fixed; inset: 60px 0 auto 0; flex-direction: column;
-    background: var(--bg-2); padding: 1.4rem; border-bottom: 1px solid var(--line);
-    display: none; gap: 1rem;
-  }
-  .nav-links.open { display: flex; }
-  .nav-burger { display: block; }
+  /* the burger menu starts at 1180px (see Navigation) */
   .course-grid { grid-template-columns: 1fr; }
 }
 
