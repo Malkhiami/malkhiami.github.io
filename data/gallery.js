@@ -3,6 +3,27 @@
 // Until a photo file exists, the site shows a placeholder tile with the expected
 // filename, so you can see exactly what to add.
 const GALLERY = [
+  // ---- Site visit: Future Ready-Mix concrete plant, November 2026 (PBL + CIVL 212) ----
+  {
+    src: "assets/images/gallery/future-2026-group.jpg",
+    caption: "Group photo at Future Ready-Mix Co. after the November 2026 site visit, with students from the PBL and Concrete Structures courses",
+    category: "Site visits"
+  },
+  {
+    src: "assets/images/gallery/future-2026-briefing.jpg",
+    caption: "Eng. Hussam Hamzah briefs the students on plant operations and the production cycle",
+    category: "Site visits"
+  },
+  {
+    src: "assets/images/gallery/future-2026-slump.jpg",
+    caption: "Measuring slump on a fresh concrete sample before the truck leaves the plant",
+    category: "Site visits"
+  },
+  {
+    src: "assets/images/gallery/future-2026-yard.jpg",
+    caption: "Transit mixers and a concrete pump truck in the plant yard",
+    category: "Site visits"
+  },
   // ---- Site visit: Future Ready-Mix Concrete Plant ----
   {
     src: "assets/images/gallery/ready-mix-1.jpg",
